@@ -111,7 +111,7 @@
             BtnElectrónica.FlatAppearance.BorderSize = 0;
             BtnElectrónica.FlatStyle = FlatStyle.Flat;
             BtnElectrónica.ForeColor = Color.White;
-            BtnElectrónica.Location = new Point(422, 281);
+            BtnElectrónica.Location = new Point(404, 154);
             BtnElectrónica.Name = "BtnElectrónica";
             BtnElectrónica.Size = new Size(91, 87);
             BtnElectrónica.TabIndex = 16;
@@ -204,7 +204,7 @@
             BtnTensión.FlatAppearance.BorderSize = 0;
             BtnTensión.FlatStyle = FlatStyle.Flat;
             BtnTensión.ForeColor = Color.White;
-            BtnTensión.Location = new Point(423, 139);
+            BtnTensión.Location = new Point(405, 12);
             BtnTensión.Name = "BtnTensión";
             BtnTensión.Size = new Size(91, 87);
             BtnTensión.TabIndex = 30;
@@ -217,7 +217,7 @@
             BtnCronómetro.BackColor = Color.Green;
             BtnCronómetro.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             BtnCronómetro.ForeColor = Color.White;
-            BtnCronómetro.Location = new Point(647, 47);
+            BtnCronómetro.Location = new Point(633, 149);
             BtnCronómetro.Name = "BtnCronómetro";
             BtnCronómetro.Size = new Size(128, 62);
             BtnCronómetro.TabIndex = 3;
@@ -228,7 +228,7 @@
             // 
             BtnElectromagnetismo.BackColor = Color.Fuchsia;
             BtnElectromagnetismo.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            BtnElectromagnetismo.Location = new Point(423, 24);
+            BtnElectromagnetismo.Location = new Point(633, 61);
             BtnElectromagnetismo.Name = "BtnElectromagnetismo";
             BtnElectromagnetismo.Size = new Size(128, 62);
             BtnElectromagnetismo.TabIndex = 8;
@@ -296,7 +296,7 @@
             BtnLimpiar.FlatAppearance.BorderSize = 0;
             BtnLimpiar.FlatStyle = FlatStyle.Flat;
             BtnLimpiar.ForeColor = Color.White;
-            BtnLimpiar.Location = new Point(644, 257);
+            BtnLimpiar.Location = new Point(633, 234);
             BtnLimpiar.Name = "BtnLimpiar";
             BtnLimpiar.Size = new Size(142, 35);
             BtnLimpiar.TabIndex = 22;
@@ -337,7 +337,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(422, 229);
+            label7.Location = new Point(404, 102);
             label7.Name = "label7";
             label7.Size = new Size(92, 40);
             label7.TabIndex = 31;
@@ -347,7 +347,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.Location = new Point(423, 372);
+            label8.Location = new Point(405, 245);
             label8.Name = "label8";
             label8.Size = new Size(92, 40);
             label8.TabIndex = 32;
@@ -381,6 +381,7 @@
             Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
             Name = "Menú";
             Text = " ";
+            Load += Menú_Load;
             ResumeLayout(false);
             PerformLayout();
         }

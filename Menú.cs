@@ -68,5 +68,10 @@ namespace física_EH
             Electrónica electrónica = new();
             electrónica.ShowDialog();
         }
+
+        private void Menú_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
