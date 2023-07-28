@@ -36,8 +36,8 @@
             RJButton.RJButton BtnFiguras;
             RJButton.RJButton BtnCinematica;
             RJButton.RJButton BtnAcustica;
+            RJButton.RJButton BtnOptica;
             BtnCronómetro = new Button();
-            BtnOptica = new Button();
             BtnElectromagnetismo = new Button();
             label2 = new Label();
             label3 = new Label();
@@ -46,6 +46,7 @@
             BtnLimpiar = new RJButton.RJButton();
             label5 = new Label();
             label1 = new Label();
+            label6 = new Label();
             BtnPorError = new RJButton.RJButton();
             rjButton2 = new RJButton.RJButton();
             BtnNewton = new RJButton.RJButton();
@@ -53,6 +54,7 @@
             BtnFiguras = new RJButton.RJButton();
             BtnCinematica = new RJButton.RJButton();
             BtnAcustica = new RJButton.RJButton();
+            BtnOptica = new RJButton.RJButton();
             SuspendLayout();
             // 
             // BtnPorError
@@ -126,7 +128,7 @@
             rjButton1.FlatAppearance.BorderSize = 0;
             rjButton1.FlatStyle = FlatStyle.Flat;
             rjButton1.ForeColor = Color.White;
-            rjButton1.Location = new Point(637, 178);
+            rjButton1.Location = new Point(629, 164);
             rjButton1.Name = "rjButton1";
             rjButton1.Size = new Size(91, 87);
             rjButton1.TabIndex = 16;
@@ -191,6 +193,24 @@
             BtnAcustica.UseVisualStyleBackColor = false;
             BtnAcustica.Click += BtnAcustica_Click_1;
             // 
+            // BtnOptica
+            // 
+            BtnOptica.BackColor = Color.White;
+            BtnOptica.BackgroundColor = Color.White;
+            BtnOptica.BorderColor = Color.PaleVioletRed;
+            BtnOptica.BorderRadius = 44;
+            BtnOptica.BorderSize = 1;
+            BtnOptica.FlatAppearance.BorderSize = 0;
+            BtnOptica.FlatStyle = FlatStyle.Flat;
+            BtnOptica.ForeColor = Color.White;
+            BtnOptica.Location = new Point(245, 139);
+            BtnOptica.Name = "BtnOptica";
+            BtnOptica.Size = new Size(91, 87);
+            BtnOptica.TabIndex = 28;
+            BtnOptica.TextColor = Color.White;
+            BtnOptica.UseVisualStyleBackColor = false;
+            BtnOptica.Click += BtnOptica_Click;
+            // 
             // BtnCronómetro
             // 
             BtnCronómetro.BackColor = Color.Green;
@@ -202,17 +222,6 @@
             BtnCronómetro.TabIndex = 3;
             BtnCronómetro.UseVisualStyleBackColor = false;
             BtnCronómetro.Click += BtnCronómetro_Click;
-            // 
-            // BtnOptica
-            // 
-            BtnOptica.BackColor = Color.FromArgb(255, 128, 0);
-            BtnOptica.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            BtnOptica.Location = new Point(423, 150);
-            BtnOptica.Name = "BtnOptica";
-            BtnOptica.Size = new Size(135, 62);
-            BtnOptica.TabIndex = 7;
-            BtnOptica.Text = "ÓPTICA (en proceso)";
-            BtnOptica.UseVisualStyleBackColor = false;
             // 
             // BtnElectromagnetismo
             // 
@@ -313,11 +322,23 @@
             label1.TabIndex = 27;
             label1.Text = "Acústica";
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.Location = new Point(266, 231);
+            label6.Name = "label6";
+            label6.Size = new Size(53, 20);
+            label6.TabIndex = 29;
+            label6.Text = "Óptica";
+            // 
             // Menú
             // 
             AutoScaleDimensions = new SizeF(6F, 13F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(828, 452);
+            Controls.Add(label6);
+            Controls.Add(BtnOptica);
             Controls.Add(label1);
             Controls.Add(BtnAcustica);
             Controls.Add(label5);
@@ -333,7 +354,6 @@
             Controls.Add(rjButton2);
             Controls.Add(BtnPorError);
             Controls.Add(BtnElectromagnetismo);
-            Controls.Add(BtnOptica);
             Controls.Add(BtnCronómetro);
             Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
             Name = "Menú";
@@ -344,7 +364,6 @@
 
         #endregion
         private Button BtnCronómetro;
-        private Button BtnOptica;
         private Button BtnElectromagnetismo;
         private Label label2;
         private Label label3;
@@ -353,5 +372,6 @@
         private RJButton.RJButton BtnLimpiar;
         private Label label5;
         private Label label1;
+        private Label label6;
     }
 }

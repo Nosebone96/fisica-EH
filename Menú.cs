@@ -50,5 +50,11 @@ namespace física_EH
             Acustica acustica = new();
             acustica.ShowDialog();
         }
+
+        private void BtnOptica_Click(object sender, EventArgs e)
+        {
+            Óptica optica = new();
+            optica.ShowDialog();
+        }
     }
 }
