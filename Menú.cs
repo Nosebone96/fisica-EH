@@ -50,11 +50,23 @@ namespace física_EH
             Acustica acustica = new();
             acustica.ShowDialog();
         }
-
+        //Óptica
         private void BtnOptica_Click(object sender, EventArgs e)
         {
             Óptica optica = new();
             optica.ShowDialog();
+        }
+        //Tensión
+        private void BtnTensión_Click(object sender, EventArgs e)
+        {
+            Tensión tensión = new();
+            tensión.ShowDialog();
+        }
+
+        private void BtnElectrónica_Click(object sender, EventArgs e)
+        {
+            Electrónica electrónica = new();
+            electrónica.ShowDialog();
         }
     }
 }

@@ -30,13 +30,13 @@
         {
             RJButton.RJButton BtnPorError;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menú));
-            RJButton.RJButton rjButton2;
             RJButton.RJButton BtnNewton;
-            RJButton.RJButton rjButton1;
+            RJButton.RJButton BtnElectrónica;
             RJButton.RJButton BtnFiguras;
             RJButton.RJButton BtnCinematica;
             RJButton.RJButton BtnAcustica;
             RJButton.RJButton BtnOptica;
+            RJButton.RJButton BtnTensión;
             BtnCronómetro = new Button();
             BtnElectromagnetismo = new Button();
             label2 = new Label();
@@ -47,14 +47,16 @@
             label5 = new Label();
             label1 = new Label();
             label6 = new Label();
+            label7 = new Label();
+            label8 = new Label();
             BtnPorError = new RJButton.RJButton();
-            rjButton2 = new RJButton.RJButton();
             BtnNewton = new RJButton.RJButton();
-            rjButton1 = new RJButton.RJButton();
+            BtnElectrónica = new RJButton.RJButton();
             BtnFiguras = new RJButton.RJButton();
             BtnCinematica = new RJButton.RJButton();
             BtnAcustica = new RJButton.RJButton();
             BtnOptica = new RJButton.RJButton();
+            BtnTensión = new RJButton.RJButton();
             SuspendLayout();
             // 
             // BtnPorError
@@ -78,25 +80,6 @@
             BtnPorError.UseVisualStyleBackColor = false;
             BtnPorError.Click += BtnPorError_Click_1;
             // 
-            // rjButton2
-            // 
-            rjButton2.BackColor = Color.MediumSlateBlue;
-            rjButton2.BackgroundColor = Color.MediumSlateBlue;
-            rjButton2.BackgroundImage = (Image)resources.GetObject("rjButton2.BackgroundImage");
-            rjButton2.BackgroundImageLayout = ImageLayout.Stretch;
-            rjButton2.BorderColor = Color.PaleVioletRed;
-            rjButton2.BorderRadius = 30;
-            rjButton2.BorderSize = 2;
-            rjButton2.FlatAppearance.BorderSize = 0;
-            rjButton2.FlatStyle = FlatStyle.Flat;
-            rjButton2.ForeColor = Color.White;
-            rjButton2.Location = new Point(629, 49);
-            rjButton2.Name = "rjButton2";
-            rjButton2.Size = new Size(99, 87);
-            rjButton2.TabIndex = 12;
-            rjButton2.TextColor = Color.White;
-            rjButton2.UseVisualStyleBackColor = false;
-            // 
             // BtnNewton
             // 
             BtnNewton.BackColor = Color.MediumSlateBlue;
@@ -118,23 +101,23 @@
             BtnNewton.UseVisualStyleBackColor = false;
             BtnNewton.Click += BtnNewton_Click_1;
             // 
-            // rjButton1
+            // BtnElectrónica
             // 
-            rjButton1.BackColor = Color.MediumSlateBlue;
-            rjButton1.BackgroundColor = Color.MediumSlateBlue;
-            rjButton1.BorderColor = Color.PaleVioletRed;
-            rjButton1.BorderRadius = 44;
-            rjButton1.BorderSize = 1;
-            rjButton1.FlatAppearance.BorderSize = 0;
-            rjButton1.FlatStyle = FlatStyle.Flat;
-            rjButton1.ForeColor = Color.White;
-            rjButton1.Location = new Point(629, 164);
-            rjButton1.Name = "rjButton1";
-            rjButton1.Size = new Size(91, 87);
-            rjButton1.TabIndex = 16;
-            rjButton1.Text = "rjButton1";
-            rjButton1.TextColor = Color.White;
-            rjButton1.UseVisualStyleBackColor = false;
+            BtnElectrónica.BackColor = Color.MediumSlateBlue;
+            BtnElectrónica.BackgroundColor = Color.MediumSlateBlue;
+            BtnElectrónica.BorderColor = Color.PaleVioletRed;
+            BtnElectrónica.BorderRadius = 44;
+            BtnElectrónica.BorderSize = 1;
+            BtnElectrónica.FlatAppearance.BorderSize = 0;
+            BtnElectrónica.FlatStyle = FlatStyle.Flat;
+            BtnElectrónica.ForeColor = Color.White;
+            BtnElectrónica.Location = new Point(422, 281);
+            BtnElectrónica.Name = "BtnElectrónica";
+            BtnElectrónica.Size = new Size(91, 87);
+            BtnElectrónica.TabIndex = 16;
+            BtnElectrónica.TextColor = Color.White;
+            BtnElectrónica.UseVisualStyleBackColor = false;
+            BtnElectrónica.Click += BtnElectrónica_Click;
             // 
             // BtnFiguras
             // 
@@ -211,12 +194,30 @@
             BtnOptica.UseVisualStyleBackColor = false;
             BtnOptica.Click += BtnOptica_Click;
             // 
+            // BtnTensión
+            // 
+            BtnTensión.BackColor = Color.MediumSlateBlue;
+            BtnTensión.BackgroundColor = Color.MediumSlateBlue;
+            BtnTensión.BorderColor = Color.PaleVioletRed;
+            BtnTensión.BorderRadius = 44;
+            BtnTensión.BorderSize = 1;
+            BtnTensión.FlatAppearance.BorderSize = 0;
+            BtnTensión.FlatStyle = FlatStyle.Flat;
+            BtnTensión.ForeColor = Color.White;
+            BtnTensión.Location = new Point(423, 139);
+            BtnTensión.Name = "BtnTensión";
+            BtnTensión.Size = new Size(91, 87);
+            BtnTensión.TabIndex = 30;
+            BtnTensión.TextColor = Color.White;
+            BtnTensión.UseVisualStyleBackColor = false;
+            BtnTensión.Click += BtnTensión_Click;
+            // 
             // BtnCronómetro
             // 
             BtnCronómetro.BackColor = Color.Green;
             BtnCronómetro.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             BtnCronómetro.ForeColor = Color.White;
-            BtnCronómetro.Location = new Point(423, 113);
+            BtnCronómetro.Location = new Point(647, 47);
             BtnCronómetro.Name = "BtnCronómetro";
             BtnCronómetro.Size = new Size(128, 62);
             BtnCronómetro.TabIndex = 3;
@@ -275,7 +276,7 @@
             Btnpor.FlatStyle = FlatStyle.Flat;
             Btnpor.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             Btnpor.ForeColor = Color.Navy;
-            Btnpor.Location = new Point(629, 310);
+            Btnpor.Location = new Point(647, 298);
             Btnpor.Name = "Btnpor";
             Btnpor.Size = new Size(111, 36);
             Btnpor.TabIndex = 19;
@@ -295,7 +296,7 @@
             BtnLimpiar.FlatAppearance.BorderSize = 0;
             BtnLimpiar.FlatStyle = FlatStyle.Flat;
             BtnLimpiar.ForeColor = Color.White;
-            BtnLimpiar.Location = new Point(612, 393);
+            BtnLimpiar.Location = new Point(644, 257);
             BtnLimpiar.Name = "BtnLimpiar";
             BtnLimpiar.Size = new Size(142, 35);
             BtnLimpiar.TabIndex = 22;
@@ -332,11 +333,34 @@
             label6.TabIndex = 29;
             label6.Text = "     Óptica\r\n(en proceso)";
             // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            label7.Location = new Point(422, 229);
+            label7.Name = "label7";
+            label7.Size = new Size(92, 40);
+            label7.TabIndex = 31;
+            label7.Text = "     Tensión\r\n(en proceso)";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            label8.Location = new Point(423, 372);
+            label8.Name = "label8";
+            label8.Size = new Size(92, 40);
+            label8.TabIndex = 32;
+            label8.Text = " Electrónica\r\n(en proceso)";
+            // 
             // Menú
             // 
             AutoScaleDimensions = new SizeF(6F, 13F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(828, 452);
+            Controls.Add(label8);
+            Controls.Add(label7);
+            Controls.Add(BtnTensión);
             Controls.Add(label6);
             Controls.Add(BtnOptica);
             Controls.Add(label1);
@@ -347,11 +371,10 @@
             Controls.Add(Btnpor);
             Controls.Add(label4);
             Controls.Add(BtnFiguras);
-            Controls.Add(rjButton1);
+            Controls.Add(BtnElectrónica);
             Controls.Add(label3);
             Controls.Add(BtnNewton);
             Controls.Add(label2);
-            Controls.Add(rjButton2);
             Controls.Add(BtnPorError);
             Controls.Add(BtnElectromagnetismo);
             Controls.Add(BtnCronómetro);
@@ -373,5 +396,7 @@
         private Label label5;
         private Label label1;
         private Label label6;
+        private Label label7;
+        private Label label8;
     }
 }
