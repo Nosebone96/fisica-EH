@@ -185,7 +185,7 @@
             BtnAcustica.FlatAppearance.BorderSize = 0;
             BtnAcustica.FlatStyle = FlatStyle.Flat;
             BtnAcustica.ForeColor = Color.White;
-            BtnAcustica.Location = new Point(441, 12);
+            BtnAcustica.Location = new Point(246, 280);
             BtnAcustica.Name = "BtnAcustica";
             BtnAcustica.Size = new Size(91, 87);
             BtnAcustica.TabIndex = 26;
@@ -216,7 +216,7 @@
             BtnCronómetro.BackColor = Color.Green;
             BtnCronómetro.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             BtnCronómetro.ForeColor = Color.White;
-            BtnCronómetro.Location = new Point(423, 323);
+            BtnCronómetro.Location = new Point(423, 113);
             BtnCronómetro.Name = "BtnCronómetro";
             BtnCronómetro.Size = new Size(128, 62);
             BtnCronómetro.TabIndex = 3;
@@ -227,7 +227,7 @@
             // 
             BtnElectromagnetismo.BackColor = Color.Fuchsia;
             BtnElectromagnetismo.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            BtnElectromagnetismo.Location = new Point(423, 224);
+            BtnElectromagnetismo.Location = new Point(423, 24);
             BtnElectromagnetismo.Name = "BtnElectromagnetismo";
             BtnElectromagnetismo.Size = new Size(128, 62);
             BtnElectromagnetismo.TabIndex = 8;
@@ -316,7 +316,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(458, 116);
+            label1.Location = new Point(259, 372);
             label1.Name = "label1";
             label1.Size = new Size(64, 20);
             label1.TabIndex = 27;
@@ -326,11 +326,11 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(266, 231);
+            label6.Location = new Point(245, 231);
             label6.Name = "label6";
-            label6.Size = new Size(53, 20);
+            label6.Size = new Size(92, 40);
             label6.TabIndex = 29;
-            label6.Text = "Óptica";
+            label6.Text = "     Óptica\r\n(en proceso)";
             // 
             // Menú
             // 
