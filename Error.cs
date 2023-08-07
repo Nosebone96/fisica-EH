@@ -16,8 +16,7 @@ namespace física_EH
         {
             InitializeComponent();
         }
-
-        private void Btnpor_Click_1(object sender, EventArgs e)
+        private void BtnCalcular_Click(object sender, EventArgs e)
         {
             try
             {
@@ -35,8 +34,7 @@ namespace física_EH
                 lblporerror1.Text = "los valores digitados son incorrectos :(";
             }
         }
-
-        private void Btnlimpiar_Click(object sender, EventArgs e)
+        private void BtnLimpiar_Click_1(object sender, EventArgs e)
         {
             lblporerror1.Text = "";
             txtvalA.Text = "";

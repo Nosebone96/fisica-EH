@@ -28,20 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Error));
             label1 = new Label();
             label2 = new Label();
             txtvalA = new TextBox();
             txtvalEx = new TextBox();
             label3 = new Label();
             lblporerror1 = new Label();
-            Btnlimpiar = new Button();
-            Btnpor = new RJButton.RJButton();
+            BtnLimpiar = new RJButton.RJButton();
+            BtnCalcular = new RJButton.RJButton();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(147, 95);
+            label1.Location = new Point(45, 90);
             label1.Name = "label1";
             label1.Size = new Size(142, 15);
             label1.TabIndex = 0;
@@ -50,7 +51,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(130, 141);
+            label2.Location = new Point(24, 141);
             label2.Name = "label2";
             label2.Size = new Size(166, 15);
             label2.TabIndex = 1;
@@ -58,14 +59,14 @@
             // 
             // txtvalA
             // 
-            txtvalA.Location = new Point(287, 87);
+            txtvalA.Location = new Point(193, 87);
             txtvalA.Name = "txtvalA";
             txtvalA.Size = new Size(100, 23);
             txtvalA.TabIndex = 2;
             // 
             // txtvalEx
             // 
-            txtvalEx.Location = new Point(290, 138);
+            txtvalEx.Location = new Point(196, 138);
             txtvalEx.Name = "txtvalEx";
             txtvalEx.Size = new Size(100, 23);
             txtvalEx.TabIndex = 3;
@@ -73,7 +74,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(156, 197);
+            label3.Location = new Point(131, 215);
             label3.Name = "label3";
             label3.Size = new Size(59, 15);
             label3.TabIndex = 5;
@@ -82,48 +83,58 @@
             // lblporerror1
             // 
             lblporerror1.AutoSize = true;
-            lblporerror1.Location = new Point(220, 197);
+            lblporerror1.Location = new Point(195, 215);
             lblporerror1.Name = "lblporerror1";
             lblporerror1.Size = new Size(0, 15);
             lblporerror1.TabIndex = 6;
             // 
-            // Btnlimpiar
+            // BtnLimpiar
             // 
-            Btnlimpiar.Location = new Point(449, 141);
-            Btnlimpiar.Name = "Btnlimpiar";
-            Btnlimpiar.Size = new Size(104, 34);
-            Btnlimpiar.TabIndex = 7;
-            Btnlimpiar.Text = "Limpiar";
-            Btnlimpiar.UseVisualStyleBackColor = true;
-            Btnlimpiar.Click += Btnlimpiar_Click;
+            BtnLimpiar.BackColor = Color.MediumSlateBlue;
+            BtnLimpiar.BackgroundColor = Color.MediumSlateBlue;
+            BtnLimpiar.BackgroundImage = (Image)resources.GetObject("BtnLimpiar.BackgroundImage");
+            BtnLimpiar.BackgroundImageLayout = ImageLayout.Stretch;
+            BtnLimpiar.BorderColor = Color.FromArgb(192, 0, 0);
+            BtnLimpiar.BorderRadius = 15;
+            BtnLimpiar.BorderSize = 2;
+            BtnLimpiar.FlatAppearance.BorderSize = 0;
+            BtnLimpiar.FlatStyle = FlatStyle.Flat;
+            BtnLimpiar.ForeColor = Color.White;
+            BtnLimpiar.Location = new Point(345, 141);
+            BtnLimpiar.Name = "BtnLimpiar";
+            BtnLimpiar.Size = new Size(142, 35);
+            BtnLimpiar.TabIndex = 23;
+            BtnLimpiar.TextColor = Color.White;
+            BtnLimpiar.UseVisualStyleBackColor = false;
+            BtnLimpiar.Click += BtnLimpiar_Click_1;
             // 
-            // Btnpor
+            // BtnCalcular
             // 
-            Btnpor.BackColor = Color.White;
-            Btnpor.BackgroundColor = Color.White;
-            Btnpor.BorderColor = Color.Cyan;
-            Btnpor.BorderRadius = 10;
-            Btnpor.BorderSize = 2;
-            Btnpor.FlatAppearance.BorderSize = 0;
-            Btnpor.FlatStyle = FlatStyle.Flat;
-            Btnpor.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            Btnpor.ForeColor = Color.Black;
-            Btnpor.Location = new Point(442, 87);
-            Btnpor.Name = "Btnpor";
-            Btnpor.Size = new Size(111, 36);
-            Btnpor.TabIndex = 8;
-            Btnpor.Text = "Calcular";
-            Btnpor.TextColor = Color.Black;
-            Btnpor.UseVisualStyleBackColor = false;
-            Btnpor.Click += Btnpor_Click_1;
+            BtnCalcular.BackColor = Color.FromArgb(224, 224, 224);
+            BtnCalcular.BackgroundColor = Color.FromArgb(224, 224, 224);
+            BtnCalcular.BorderColor = Color.FromArgb(0, 0, 192);
+            BtnCalcular.BorderRadius = 1;
+            BtnCalcular.BorderSize = 2;
+            BtnCalcular.FlatAppearance.BorderSize = 0;
+            BtnCalcular.FlatStyle = FlatStyle.Flat;
+            BtnCalcular.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            BtnCalcular.ForeColor = Color.Navy;
+            BtnCalcular.Location = new Point(363, 69);
+            BtnCalcular.Name = "BtnCalcular";
+            BtnCalcular.Size = new Size(111, 36);
+            BtnCalcular.TabIndex = 20;
+            BtnCalcular.Text = "Calcular";
+            BtnCalcular.TextColor = Color.Navy;
+            BtnCalcular.UseVisualStyleBackColor = false;
+            BtnCalcular.Click += BtnCalcular_Click;
             // 
             // Error
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(Btnpor);
-            Controls.Add(Btnlimpiar);
+            Controls.Add(BtnLimpiar);
+            Controls.Add(BtnCalcular);
             Controls.Add(lblporerror1);
             Controls.Add(label3);
             Controls.Add(txtvalEx);
@@ -145,7 +156,7 @@
         private TextBox txtvalEx;
         private Label label3;
         private Label lblporerror1;
-        private Button Btnlimpiar;
-        private RJButton.RJButton Btnpor;
+        private RJButton.RJButton BtnLimpiar;
+        private RJButton.RJButton BtnCalcular;
     }
 }
