@@ -100,7 +100,7 @@
             BtnLimpiar.FlatAppearance.BorderSize = 0;
             BtnLimpiar.FlatStyle = FlatStyle.Flat;
             BtnLimpiar.ForeColor = Color.White;
-            BtnLimpiar.Location = new Point(345, 141);
+            BtnLimpiar.Location = new Point(345, 131);
             BtnLimpiar.Name = "BtnLimpiar";
             BtnLimpiar.Size = new Size(142, 35);
             BtnLimpiar.TabIndex = 23;
@@ -119,7 +119,7 @@
             BtnCalcular.FlatStyle = FlatStyle.Flat;
             BtnCalcular.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             BtnCalcular.ForeColor = Color.Navy;
-            BtnCalcular.Location = new Point(363, 69);
+            BtnCalcular.Location = new Point(361, 78);
             BtnCalcular.Name = "BtnCalcular";
             BtnCalcular.Size = new Size(111, 36);
             BtnCalcular.TabIndex = 20;

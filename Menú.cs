@@ -38,13 +38,13 @@ namespace física_EH
             Acustica acustica = new();
             acustica.ShowDialog();
         }
-
+        //cinemática
         private void BtnCinematica_Click(object sender, EventArgs e)
         {
             Cinematica cinematica = new();
             cinematica.ShowDialog();
         }
-
+        //acústica
         private void BtnAcustica_Click_1(object sender, EventArgs e)
         {
             Acustica acustica = new();
@@ -62,7 +62,7 @@ namespace física_EH
             Tensión tensión = new();
             tensión.ShowDialog();
         }
-
+        //electrónica
         private void BtnElectrónica_Click(object sender, EventArgs e)
         {
             Electrónica electrónica = new();
