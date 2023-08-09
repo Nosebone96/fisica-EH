@@ -18,8 +18,9 @@ namespace física_EH
         {
             InitializeComponent();
         }
-        private void BtnCalcular_Click(object sender, EventArgs e)
+        public void BtnCalcular_Click(object sender, EventArgs e)
         {
+
             _ = Double.TryParse(txtAceleración.Text, out double aceleracion);
             _ = Double.TryParse(txtDistancia.Text, out double distancia);
             _ = Double.TryParse(txtTiempo.Text, out double Tiempo);
@@ -60,7 +61,7 @@ siguiente1:
 //
                 if (txtDistancia.Text == "0" || txtDistancia.Text == "")
                 {
-                    
+
                     if (txtVelocidadFinal.Text != "" && txtTiempo.Text != "" && txtAceleración.Text != "")
                     {
                         distancia = velocidadInicial * Tiempo + (aceleracion * Math.Pow(Tiempo, 2)) / 2;

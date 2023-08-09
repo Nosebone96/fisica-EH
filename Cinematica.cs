@@ -28,5 +28,11 @@ namespace física_EH
             MRUV MRUVF = new();
             MRUVF.ShowDialog();
         }
+
+        private void BtnMVCL_Click(object sender, EventArgs e)
+        {
+            MVCL caidaLibre = new();
+            caidaLibre.ShowDialog();
+        }
     }
 }
