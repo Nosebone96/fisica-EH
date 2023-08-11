@@ -39,8 +39,7 @@ namespace física_EH
         //Óptica
         private void BtnOptica_Click(object sender, EventArgs e)
         {
-            Óptica optica = new();
-            optica.Show();
+            
         }
         //Tensión
         private void BtnTensión_Click(object sender, EventArgs e)

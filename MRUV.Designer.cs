@@ -127,11 +127,11 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(104, 204);
+            label4.Location = new Point(93, 196);
             label4.Name = "label4";
-            label4.Size = new Size(105, 15);
+            label4.Size = new Size(116, 15);
             label4.TabIndex = 28;
-            label4.Text = "Digite la gravedad:";
+            label4.Text = "Digite la aceleración:";
             // 
             // label5
             // 

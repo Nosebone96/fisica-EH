@@ -26,7 +26,7 @@ namespace física_EH
         private void BtnCalcularMVCL_Click(object sender, EventArgs e)
         {
             _ = Double.TryParse(txtGravedad.Text, out double aceleracion);
-            _ = Double.TryParse(txtGravedad.Text, out double distancia);
+            _ = Double.TryParse(txtAltura.Text, out double distancia);
             _ = Double.TryParse(txtTiempo.Text, out double Tiempo);
             _ = Double.TryParse(txtVelocidadInicial.Text, out double velocidadInicial);
             _ = Double.TryParse(txtVelocidadFinal.Text, out double velocidadFinal);
@@ -93,6 +93,11 @@ siguiente2:
 //
                 if (txtTiempo.Text == "0" || txtTiempo.Text == "")
                 {
+                    if ( txtVelocidadInicial.Text != "" && txtAltura.Text != "" && txtGravedad.Text != "")
+                    {
+                        Tiempo = Math.Sqrt((2 * distancia / aceleracion));
+                        goto siguiente3;
+                    }
                     if (txtVelocidadFinal.Text != "" && txtVelocidadInicial.Text != "" && txtGravedad.Text != "")
                     {
                         Tiempo = (velocidadFinal - velocidadInicial) / aceleracion;
@@ -115,7 +120,7 @@ siguiente3:
                         aceleracion = (velocidadFinal - velocidadInicial) / Tiempo;
                         goto siguiente4;
                     }
-                    if (txtGravedad.Text != "" && txtVelocidadInicial.Text != "" && txtTiempo.Text != "" && txtVelocidadFinal.Text == "")
+                    if (txtVelocidadInicial.Text != "" && txtTiempo.Text != "" && txtVelocidadFinal.Text == "")
                     {
                         aceleracion = (distancia - (velocidadInicial * Tiempo)) / (0.5 * Math.Pow(Tiempo, 2));
                         goto siguiente4;
@@ -137,7 +142,7 @@ siguiente4:
                         velocidadFinal = velocidadInicial + aceleracion * Tiempo;
                         goto siguiente5;
                     }
-                    if (txtVelocidadInicial.Text != "" && txtGravedad.Text != "" && txtGravedad.Text != "")
+                    if (txtVelocidadInicial.Text != "" && txtGravedad.Text != "" && txtAltura.Text != "")
                     {
                         velocidadFinal = Math.Sqrt(Math.Pow(velocidadInicial, 2) + 2 * aceleracion * distancia);
                         goto siguiente5;
@@ -151,7 +156,7 @@ siguiente4:
                 }
 siguiente5:
                 txtGravedad.Text = "" + aceleracion;
-                txtGravedad.Text = "" + distancia;
+                txtAltura.Text = "" + distancia;
                 txtTiempo.Text = "" + Tiempo;
                 txtVelocidadFinal.Text = "" + velocidadFinal;
                 txtVelocidadInicial.Text = "" + velocidadInicial;
@@ -173,6 +178,12 @@ siguiente5:
             txtTiempo.Text = "";
             txtVelocidadFinal.Text = "";
             txtVelocidadInicial.Text = "";
+            txtGravedad.Text = "9.8";
+            lblAceleración.Text = "";
+            lblDistancia.Text = "";
+            lblTiempo.Text = "";
+            lblVelocidadFinal.Text = "";
+            lblVelocidadInicial.Text = "";
         }
     }
 }
