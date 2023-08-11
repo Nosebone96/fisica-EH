@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Common;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -21,21 +22,21 @@ namespace física_EH
         {
             EcuaciónH ventanaEcuaciónH = new();
             ventanaEcuaciónH.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void BtnMRUV_Click(object sender, EventArgs e)
         {
             MRUV MRUVF = new();
             MRUVF.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void BtnMVCL_Click(object sender, EventArgs e)
         {
             MVCL caidaLibre = new();
             caidaLibre.Show();
-            this.Hide();
+            this.Close();
         }
     }
 }

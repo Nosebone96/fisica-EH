@@ -21,7 +21,7 @@ namespace física_EH
         {
             LeyesDeNewton newton = new();
             newton.Show();
-            this.Hide();
+            this.Close();
         }
     }
 }

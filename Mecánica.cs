@@ -22,14 +22,14 @@ namespace física_EH
         {
             Dinámica dinamica = new();
             dinamica.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void BtnCinematica_Click(object sender, EventArgs e)
         {
             Cinematica cinematica = new();
             cinematica.Show();
-            this.Hide();
+            this.Close();
         }
     }
 }
