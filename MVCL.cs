@@ -63,14 +63,18 @@ siguiente1:
 //
 //para distancia
 //
-                if (txtGravedad.Text == "0" || txtGravedad.Text == "")
+                if (txtAltura.Text == "0" || txtAltura.Text == "")
                 {
-
-                    if (txtVelocidadFinal.Text != "" && txtTiempo.Text != "" && txtGravedad.Text != "")
+                    if (txtVelocidadFinal.Text != "" && txtVelocidadInicial.Text != "" && txtTiempo.Text != "")
+                    {
+                        distancia = ((velocidadFinal + velocidadFinal) / 2 * Tiempo);
+                        goto siguiente2;
+                    }
+                    /*if (txtVelocidadFinal.Text != "" && txtTiempo.Text != "" && txtGravedad.Text != "")
                     {
                         distancia = velocidadInicial * Tiempo + (aceleracion * Math.Pow(Tiempo, 2)) / 2;
                         goto siguiente2;
-                    }
+                    }*/
                     if (txtGravedad.Text == "" && txtVelocidadInicial.Text != "" && txtTiempo.Text != "" && txtGravedad.Text != "")
                     {
                         distancia = velocidadInicial * Tiempo + 0.5 * aceleracion * Math.Pow(Tiempo, 2);
@@ -93,14 +97,14 @@ siguiente2:
 //
                 if (txtTiempo.Text == "0" || txtTiempo.Text == "")
                 {
-                    if ( txtVelocidadInicial.Text != "" && txtAltura.Text != "" && txtGravedad.Text != "")
+                    /*if ( txtVelocidadInicial.Text != "" && txtAltura.Text != "" && txtGravedad.Text != "")
                     {
                         Tiempo = Math.Sqrt((2 * distancia / aceleracion));
                         goto siguiente3;
-                    }
+                    }*/
                     if (txtVelocidadFinal.Text != "" && txtVelocidadInicial.Text != "" && txtGravedad.Text != "")
                     {
-                        Tiempo = (velocidadFinal - velocidadInicial) / aceleracion;
+                        Tiempo = (velocidadFinal + velocidadInicial) / aceleracion;
                         goto siguiente3;
                     }
                     if (txtGravedad.Text != "" && txtVelocidadInicial.Text != "" && txtVelocidadFinal.Text != "")

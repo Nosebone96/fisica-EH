@@ -36,16 +36,10 @@ namespace física_EH
             Acustica acustica = new();
             acustica.Show();
         }
-        //Óptica
+       //Óptica
         private void BtnOptica_Click(object sender, EventArgs e)
         {
-            
-        }
-        //Tensión
-        private void BtnTensión_Click(object sender, EventArgs e)
-        {
-            Tensión tensión = new();
-            tensión.Show();
+
         }
         //electrónica
         private void BtnElectrónica_Click(object sender, EventArgs e)

@@ -89,11 +89,11 @@ siguiente2:
 //
                 if (txtTiempo.Text == "0" || txtTiempo.Text == "")
                 {
-                    if (txtVelocidadFinal.Text != "" && txtVelocidadInicial.Text != "" && txtAceleración.Text != "")
+                    /*if (txtVelocidadFinal.Text != "" && txtVelocidadInicial.Text != "" && txtAceleración.Text != "")
                     {
                         Tiempo = (velocidadFinal - velocidadInicial) / aceleracion;
                         goto siguiente3;
-                    }
+                    }*/
                     if (txtDistancia.Text != "" && txtVelocidadInicial.Text != "" && txtVelocidadFinal.Text != "")
                     {
                         Tiempo = distancia / ((velocidadInicial + velocidadFinal) / 2);

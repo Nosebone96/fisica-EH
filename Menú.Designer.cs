@@ -34,7 +34,6 @@
             RJButton.RJButton BtnFiguras;
             RJButton.RJButton BtnAcustica;
             RJButton.RJButton BtnOptica;
-            RJButton.RJButton BtnTensión;
             RJButton.RJButton BtnMecánica;
             BtnCronómetro = new Button();
             BtnElectromagnetismo = new Button();
@@ -44,7 +43,6 @@
             BtnLimpiar = new RJButton.RJButton();
             label1 = new Label();
             label6 = new Label();
-            label7 = new Label();
             label8 = new Label();
             label5 = new Label();
             BtnPorError = new RJButton.RJButton();
@@ -52,7 +50,6 @@
             BtnFiguras = new RJButton.RJButton();
             BtnAcustica = new RJButton.RJButton();
             BtnOptica = new RJButton.RJButton();
-            BtnTensión = new RJButton.RJButton();
             BtnMecánica = new RJButton.RJButton();
             SuspendLayout();
             // 
@@ -151,24 +148,6 @@
             BtnOptica.TextColor = Color.White;
             BtnOptica.UseVisualStyleBackColor = false;
             BtnOptica.Click += BtnOptica_Click;
-            // 
-            // BtnTensión
-            // 
-            BtnTensión.BackColor = Color.MediumSlateBlue;
-            BtnTensión.BackgroundColor = Color.MediumSlateBlue;
-            BtnTensión.BorderColor = Color.PaleVioletRed;
-            BtnTensión.BorderRadius = 44;
-            BtnTensión.BorderSize = 1;
-            BtnTensión.FlatAppearance.BorderSize = 0;
-            BtnTensión.FlatStyle = FlatStyle.Flat;
-            BtnTensión.ForeColor = Color.White;
-            BtnTensión.Location = new Point(405, 12);
-            BtnTensión.Name = "BtnTensión";
-            BtnTensión.Size = new Size(91, 87);
-            BtnTensión.TabIndex = 30;
-            BtnTensión.TextColor = Color.White;
-            BtnTensión.UseVisualStyleBackColor = false;
-            BtnTensión.Click += BtnTensión_Click;
             // 
             // BtnMecánica
             // 
@@ -289,16 +268,6 @@
             label6.TabIndex = 29;
             label6.Text = "     Óptica\r\n(en proceso)";
             // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(404, 102);
-            label7.Name = "label7";
-            label7.Size = new Size(92, 40);
-            label7.TabIndex = 31;
-            label7.Text = "     Tensión\r\n(en proceso)";
-            // 
             // label8
             // 
             label8.AutoSize = true;
@@ -327,8 +296,6 @@
             Controls.Add(label5);
             Controls.Add(BtnMecánica);
             Controls.Add(label8);
-            Controls.Add(label7);
-            Controls.Add(BtnTensión);
             Controls.Add(label6);
             Controls.Add(BtnOptica);
             Controls.Add(label1);
@@ -359,7 +326,6 @@
         private RJButton.RJButton BtnLimpiar;
         private Label label1;
         private Label label6;
-        private Label label7;
         private Label label8;
         private Label label5;
     }

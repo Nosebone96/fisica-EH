@@ -23,5 +23,12 @@ namespace física_EH
             newton.Show();
             this.Close();
         }
+
+        private void BtnTensión_Click(object sender, EventArgs e)
+        {
+            Tensión tensión = new();
+            tensión.Show();
+            this.Close();
+        }
     }
 }
