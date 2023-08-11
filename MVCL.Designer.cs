@@ -262,6 +262,7 @@
             BtnLimpiar.TabIndex = 51;
             BtnLimpiar.TextColor = Color.White;
             BtnLimpiar.UseVisualStyleBackColor = false;
+            BtnLimpiar.Click += BtnLimpiar_Click;
             // 
             // BtnCalcularMVCL
             // 

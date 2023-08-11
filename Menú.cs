@@ -10,68 +10,60 @@ namespace física_EH
         private void BtnPorError_Click_1(object sender, EventArgs e)
         {
             Error ventanaporerror = new();
-            ventanaporerror.ShowDialog();
+            ventanaporerror.Show();
         }
         //Volumen de figuras
         private void BtnFiguras_Click_1(object sender, EventArgs e)
         {
             Volumen VolumenDeFiguras = new();
-            VolumenDeFiguras.ShowDialog();
+            VolumenDeFiguras.Show();
         }
         //no se sabe todavía
         private void BtnCronómetro_Click(object sender, EventArgs e)
         {
             /*nombre de la pestaña = */
             Cronómetro cronos = new();
-            cronos.ShowDialog();
+            cronos.Show();
         }
-        // Leyes De Newton
-
-        private void BtnNewton_Click_1(object sender, EventArgs e)
-        {
-            LeyesDeNewton newton = new();
-            newton.ShowDialog();
-        }
-
         private void BtnAcustica_Click(object sender, EventArgs e)
         {
             Acustica acustica = new();
-            acustica.ShowDialog();
-        }
-        //cinemática
-        private void BtnCinematica_Click(object sender, EventArgs e)
-        {
-            Cinematica cinematica = new();
-            cinematica.ShowDialog();
+            acustica.Show();
         }
         //acústica
         private void BtnAcustica_Click_1(object sender, EventArgs e)
         {
             Acustica acustica = new();
-            acustica.ShowDialog();
+            acustica.Show();
         }
         //Óptica
         private void BtnOptica_Click(object sender, EventArgs e)
         {
             Óptica optica = new();
-            optica.ShowDialog();
+            optica.Show();
         }
         //Tensión
         private void BtnTensión_Click(object sender, EventArgs e)
         {
             Tensión tensión = new();
-            tensión.ShowDialog();
+            tensión.Show();
         }
         //electrónica
         private void BtnElectrónica_Click(object sender, EventArgs e)
         {
             Electrónica electrónica = new();
-            electrónica.ShowDialog();
+            electrónica.Show();
         }
 
         private void Menú_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void BtnMecánica_Click(object sender, EventArgs e)
+        {
+            Mecánica mecanica = new();
+            mecanica.Show();
         }
     }
 }

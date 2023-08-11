@@ -20,19 +20,22 @@ namespace física_EH
         private void BtnEcuaciónHoraria_Click(object sender, EventArgs e)
         {
             EcuaciónH ventanaEcuaciónH = new();
-            ventanaEcuaciónH.ShowDialog();
+            ventanaEcuaciónH.Show();
+            this.Hide();
         }
 
         private void BtnMRUV_Click(object sender, EventArgs e)
         {
             MRUV MRUVF = new();
-            MRUVF.ShowDialog();
+            MRUVF.Show();
+            this.Hide();
         }
 
         private void BtnMVCL_Click(object sender, EventArgs e)
         {
             MVCL caidaLibre = new();
-            caidaLibre.ShowDialog();
+            caidaLibre.Show();
+            this.Hide();
         }
     }
 }

@@ -30,33 +30,30 @@
         {
             RJButton.RJButton BtnPorError;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menú));
-            RJButton.RJButton BtnNewton;
             RJButton.RJButton BtnElectrónica;
             RJButton.RJButton BtnFiguras;
-            RJButton.RJButton BtnCinematica;
             RJButton.RJButton BtnAcustica;
             RJButton.RJButton BtnOptica;
             RJButton.RJButton BtnTensión;
+            RJButton.RJButton BtnMecánica;
             BtnCronómetro = new Button();
             BtnElectromagnetismo = new Button();
             label2 = new Label();
-            label3 = new Label();
             label4 = new Label();
             Btnpor = new RJButton.RJButton();
             BtnLimpiar = new RJButton.RJButton();
-            label5 = new Label();
             label1 = new Label();
             label6 = new Label();
             label7 = new Label();
             label8 = new Label();
+            label5 = new Label();
             BtnPorError = new RJButton.RJButton();
-            BtnNewton = new RJButton.RJButton();
             BtnElectrónica = new RJButton.RJButton();
             BtnFiguras = new RJButton.RJButton();
-            BtnCinematica = new RJButton.RJButton();
             BtnAcustica = new RJButton.RJButton();
             BtnOptica = new RJButton.RJButton();
             BtnTensión = new RJButton.RJButton();
+            BtnMecánica = new RJButton.RJButton();
             SuspendLayout();
             // 
             // BtnPorError
@@ -79,27 +76,6 @@
             BtnPorError.TextColor = Color.White;
             BtnPorError.UseVisualStyleBackColor = false;
             BtnPorError.Click += BtnPorError_Click_1;
-            // 
-            // BtnNewton
-            // 
-            BtnNewton.BackColor = Color.MediumSlateBlue;
-            BtnNewton.BackgroundColor = Color.MediumSlateBlue;
-            BtnNewton.BackgroundImage = (Image)resources.GetObject("BtnNewton.BackgroundImage");
-            BtnNewton.BackgroundImageLayout = ImageLayout.Stretch;
-            BtnNewton.BorderColor = Color.FromArgb(0, 192, 0);
-            BtnNewton.BorderRadius = 44;
-            BtnNewton.BorderSize = 1;
-            BtnNewton.Cursor = Cursors.Hand;
-            BtnNewton.FlatAppearance.BorderSize = 0;
-            BtnNewton.FlatStyle = FlatStyle.Flat;
-            BtnNewton.ForeColor = Color.White;
-            BtnNewton.Location = new Point(69, 280);
-            BtnNewton.Name = "BtnNewton";
-            BtnNewton.Size = new Size(91, 88);
-            BtnNewton.TabIndex = 14;
-            BtnNewton.TextColor = Color.White;
-            BtnNewton.UseVisualStyleBackColor = false;
-            BtnNewton.Click += BtnNewton_Click_1;
             // 
             // BtnElectrónica
             // 
@@ -139,24 +115,6 @@
             BtnFiguras.TextColor = Color.White;
             BtnFiguras.UseVisualStyleBackColor = false;
             BtnFiguras.Click += BtnFiguras_Click_1;
-            // 
-            // BtnCinematica
-            // 
-            BtnCinematica.BackColor = Color.GhostWhite;
-            BtnCinematica.BackgroundColor = Color.GhostWhite;
-            BtnCinematica.BorderColor = Color.PaleVioletRed;
-            BtnCinematica.BorderRadius = 44;
-            BtnCinematica.BorderSize = 1;
-            BtnCinematica.FlatAppearance.BorderSize = 0;
-            BtnCinematica.FlatStyle = FlatStyle.Flat;
-            BtnCinematica.ForeColor = Color.White;
-            BtnCinematica.Location = new Point(69, 12);
-            BtnCinematica.Name = "BtnCinematica";
-            BtnCinematica.Size = new Size(91, 87);
-            BtnCinematica.TabIndex = 24;
-            BtnCinematica.TextColor = Color.White;
-            BtnCinematica.UseVisualStyleBackColor = false;
-            BtnCinematica.Click += BtnCinematica_Click;
             // 
             // BtnAcustica
             // 
@@ -212,6 +170,24 @@
             BtnTensión.UseVisualStyleBackColor = false;
             BtnTensión.Click += BtnTensión_Click;
             // 
+            // BtnMecánica
+            // 
+            BtnMecánica.BackColor = Color.MediumSlateBlue;
+            BtnMecánica.BackgroundColor = Color.MediumSlateBlue;
+            BtnMecánica.BorderColor = Color.PaleVioletRed;
+            BtnMecánica.BorderRadius = 44;
+            BtnMecánica.BorderSize = 1;
+            BtnMecánica.FlatAppearance.BorderSize = 0;
+            BtnMecánica.FlatStyle = FlatStyle.Flat;
+            BtnMecánica.ForeColor = Color.White;
+            BtnMecánica.Location = new Point(69, 12);
+            BtnMecánica.Name = "BtnMecánica";
+            BtnMecánica.Size = new Size(91, 87);
+            BtnMecánica.TabIndex = 33;
+            BtnMecánica.TextColor = Color.White;
+            BtnMecánica.UseVisualStyleBackColor = false;
+            BtnMecánica.Click += BtnMecánica_Click;
+            // 
             // BtnCronómetro
             // 
             BtnCronómetro.BackColor = Color.Green;
@@ -244,16 +220,6 @@
             label2.Size = new Size(144, 21);
             label2.TabIndex = 13;
             label2.Text = "Porcentaje De Error";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(45, 371);
-            label3.Name = "label3";
-            label3.Size = new Size(131, 21);
-            label3.TabIndex = 15;
-            label3.Text = "Leyes De Newton";
             // 
             // label4
             // 
@@ -303,16 +269,6 @@
             BtnLimpiar.TextColor = Color.White;
             BtnLimpiar.UseVisualStyleBackColor = false;
             // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(69, 102);
-            label5.Name = "label5";
-            label5.Size = new Size(87, 21);
-            label5.TabIndex = 25;
-            label5.Text = "Cinematica";
-            // 
             // label1
             // 
             label1.AutoSize = true;
@@ -353,11 +309,23 @@
             label8.TabIndex = 32;
             label8.Text = " Electrónica\r\n(en proceso)";
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Location = new Point(78, 102);
+            label5.Name = "label5";
+            label5.Size = new Size(72, 20);
+            label5.TabIndex = 34;
+            label5.Text = "Mecánica";
+            // 
             // Menú
             // 
             AutoScaleDimensions = new SizeF(6F, 13F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(828, 452);
+            Controls.Add(label5);
+            Controls.Add(BtnMecánica);
             Controls.Add(label8);
             Controls.Add(label7);
             Controls.Add(BtnTensión);
@@ -365,15 +333,11 @@
             Controls.Add(BtnOptica);
             Controls.Add(label1);
             Controls.Add(BtnAcustica);
-            Controls.Add(label5);
-            Controls.Add(BtnCinematica);
             Controls.Add(BtnLimpiar);
             Controls.Add(Btnpor);
             Controls.Add(label4);
             Controls.Add(BtnFiguras);
             Controls.Add(BtnElectrónica);
-            Controls.Add(label3);
-            Controls.Add(BtnNewton);
             Controls.Add(label2);
             Controls.Add(BtnPorError);
             Controls.Add(BtnElectromagnetismo);
@@ -390,14 +354,13 @@
         private Button BtnCronómetro;
         private Button BtnElectromagnetismo;
         private Label label2;
-        private Label label3;
         private Label label4;
         private RJButton.RJButton Btnpor;
         private RJButton.RJButton BtnLimpiar;
-        private Label label5;
         private Label label1;
         private Label label6;
         private Label label7;
         private Label label8;
+        private Label label5;
     }
 }
