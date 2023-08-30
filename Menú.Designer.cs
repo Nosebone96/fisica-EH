@@ -36,7 +36,6 @@
             RJButton.RJButton BtnOptica;
             RJButton.RJButton BtnMecánica;
             BtnCronómetro = new Button();
-            BtnElectromagnetismo = new Button();
             label2 = new Label();
             label4 = new Label();
             Btnpor = new RJButton.RJButton();
@@ -84,7 +83,7 @@
             BtnElectrónica.FlatAppearance.BorderSize = 0;
             BtnElectrónica.FlatStyle = FlatStyle.Flat;
             BtnElectrónica.ForeColor = Color.White;
-            BtnElectrónica.Location = new Point(404, 154);
+            BtnElectrónica.Location = new Point(69, 280);
             BtnElectrónica.Name = "BtnElectrónica";
             BtnElectrónica.Size = new Size(91, 87);
             BtnElectrónica.TabIndex = 16;
@@ -172,23 +171,12 @@
             BtnCronómetro.BackColor = Color.Green;
             BtnCronómetro.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             BtnCronómetro.ForeColor = Color.White;
-            BtnCronómetro.Location = new Point(633, 149);
+            BtnCronómetro.Location = new Point(376, 139);
             BtnCronómetro.Name = "BtnCronómetro";
             BtnCronómetro.Size = new Size(128, 62);
             BtnCronómetro.TabIndex = 3;
             BtnCronómetro.UseVisualStyleBackColor = false;
             BtnCronómetro.Click += BtnCronómetro_Click;
-            // 
-            // BtnElectromagnetismo
-            // 
-            BtnElectromagnetismo.BackColor = Color.Fuchsia;
-            BtnElectromagnetismo.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            BtnElectromagnetismo.Location = new Point(633, 61);
-            BtnElectromagnetismo.Name = "BtnElectromagnetismo";
-            BtnElectromagnetismo.Size = new Size(128, 62);
-            BtnElectromagnetismo.TabIndex = 8;
-            BtnElectromagnetismo.Text = "ELECTROMAGNETÍSMO\r\n   (en proceso)";
-            BtnElectromagnetismo.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
@@ -221,7 +209,7 @@
             Btnpor.FlatStyle = FlatStyle.Flat;
             Btnpor.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             Btnpor.ForeColor = Color.Navy;
-            Btnpor.Location = new Point(647, 298);
+            Btnpor.Location = new Point(390, 288);
             Btnpor.Name = "Btnpor";
             Btnpor.Size = new Size(111, 36);
             Btnpor.TabIndex = 19;
@@ -241,7 +229,7 @@
             BtnLimpiar.FlatAppearance.BorderSize = 0;
             BtnLimpiar.FlatStyle = FlatStyle.Flat;
             BtnLimpiar.ForeColor = Color.White;
-            BtnLimpiar.Location = new Point(633, 234);
+            BtnLimpiar.Location = new Point(376, 224);
             BtnLimpiar.Name = "BtnLimpiar";
             BtnLimpiar.Size = new Size(142, 35);
             BtnLimpiar.TabIndex = 22;
@@ -272,7 +260,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.Location = new Point(405, 245);
+            label8.Location = new Point(70, 371);
             label8.Name = "label8";
             label8.Size = new Size(92, 40);
             label8.TabIndex = 32;
@@ -292,7 +280,7 @@
             // 
             AutoScaleDimensions = new SizeF(6F, 13F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(828, 452);
+            ClientSize = new Size(526, 452);
             Controls.Add(label5);
             Controls.Add(BtnMecánica);
             Controls.Add(label8);
@@ -307,7 +295,6 @@
             Controls.Add(BtnElectrónica);
             Controls.Add(label2);
             Controls.Add(BtnPorError);
-            Controls.Add(BtnElectromagnetismo);
             Controls.Add(BtnCronómetro);
             Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
             Name = "Menú";
@@ -319,7 +306,6 @@
 
         #endregion
         private Button BtnCronómetro;
-        private Button BtnElectromagnetismo;
         private Label label2;
         private Label label4;
         private RJButton.RJButton Btnpor;

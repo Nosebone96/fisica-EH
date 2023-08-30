@@ -16,5 +16,12 @@ namespace física_EH
         {
             InitializeComponent();
         }
+
+        private void BtnCalcularTNT_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void LblFuerzaNormal_Click(object sender, EventArgs e) { }
+        private void LblFuerzaTangencial_Click(object sender, EventArgs e) { }
     }
 }

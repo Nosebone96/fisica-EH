@@ -1,3 +1,7 @@
+using System.Drawing;
+using System.Windows.Forms;
+using static física_EH.Program;
+
 namespace física_EH
 {
     public partial class Menú : System.Windows.Forms.Form
@@ -5,12 +9,14 @@ namespace física_EH
         public Menú()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.Manual;
+            this.Location = new Point(0, 0);
         }
         //porcentaje de error
         private void BtnPorError_Click_1(object sender, EventArgs e)
         {
             Error ventanaporerror = new();
-            ventanaporerror.Show();
+            ventanaporerror.ShowDialog();
         }
         //Volumen de figuras
         private void BtnFiguras_Click_1(object sender, EventArgs e)
@@ -36,7 +42,7 @@ namespace física_EH
             Acustica acustica = new();
             acustica.Show();
         }
-       //Óptica
+        //Óptica
         private void BtnOptica_Click(object sender, EventArgs e)
         {
             Óptica optica = new();

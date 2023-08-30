@@ -15,6 +15,8 @@ namespace física_EH
         public Error()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.Manual;
+            this.Location = new Point(0, 0);
         }
         private void BtnCalcular_Click(object sender, EventArgs e)
         {
