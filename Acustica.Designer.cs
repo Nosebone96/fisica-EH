@@ -782,7 +782,7 @@ namespace física_EH
             tabPage1.Location = new Point(4, 24);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(795, 457);
+            tabPage1.Size = new Size(579, 325);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Velocidad del desplazamiento del sonido";
             tabPage1.UseVisualStyleBackColor = true;
@@ -897,14 +897,14 @@ namespace física_EH
             FormulasAcustica.Location = new Point(-1, -1);
             FormulasAcustica.Name = "FormulasAcustica";
             FormulasAcustica.SelectedIndex = 0;
-            FormulasAcustica.Size = new Size(803, 485);
+            FormulasAcustica.Size = new Size(587, 353);
             FormulasAcustica.TabIndex = 18;
             // 
             // Acustica
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 621);
+            ClientSize = new Size(588, 367);
             Controls.Add(FormulasAcustica);
             Name = "Acustica";
             Text = "Acustica";

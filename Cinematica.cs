@@ -16,6 +16,8 @@ namespace física_EH
         public Cinematica()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.Manual;
+            this.Location = new Point(0, 0);
         }
 
         private void BtnEcuaciónHoraria_Click(object sender, EventArgs e)

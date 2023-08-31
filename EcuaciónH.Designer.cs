@@ -29,63 +29,38 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EcuaciónH));
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
             TxtVelocidad = new TextBox();
             txtTiempo = new TextBox();
             TxtDistancia = new TextBox();
             BtnLimpiarMRU = new RJButton.RJButton();
             BtnMRU = new RJButton.RJButton();
-            lblVelociad = new Label();
-            lblDistancia = new Label();
-            LblTiempo = new Label();
+            pictureBox1 = new PictureBox();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(86, 127);
-            label1.Name = "label1";
-            label1.Size = new Size(107, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Digite la velocidad:";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(86, 171);
-            label2.Name = "label2";
-            label2.Size = new Size(103, 15);
-            label2.TabIndex = 1;
-            label2.Text = "Digite la distancia:";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(99, 219);
-            label3.Name = "label3";
-            label3.Size = new Size(94, 15);
-            label3.TabIndex = 2;
-            label3.Text = "Digite el tiempo:";
             // 
             // TxtVelocidad
             // 
-            TxtVelocidad.Location = new Point(212, 124);
+            TxtVelocidad.BorderStyle = BorderStyle.FixedSingle;
+            TxtVelocidad.Location = new Point(101, 308);
             TxtVelocidad.Name = "TxtVelocidad";
             TxtVelocidad.Size = new Size(100, 23);
             TxtVelocidad.TabIndex = 3;
             // 
             // txtTiempo
             // 
-            txtTiempo.Location = new Point(212, 216);
+            txtTiempo.BorderStyle = BorderStyle.FixedSingle;
+            txtTiempo.Location = new Point(235, 308);
             txtTiempo.Name = "txtTiempo";
             txtTiempo.Size = new Size(100, 23);
             txtTiempo.TabIndex = 4;
             // 
             // TxtDistancia
             // 
-            TxtDistancia.Location = new Point(212, 163);
+            TxtDistancia.BorderStyle = BorderStyle.FixedSingle;
+            TxtDistancia.Location = new Point(290, 114);
             TxtDistancia.Name = "TxtDistancia";
             TxtDistancia.Size = new Size(100, 23);
             TxtDistancia.TabIndex = 5;
@@ -102,7 +77,7 @@
             BtnLimpiarMRU.FlatAppearance.BorderSize = 0;
             BtnLimpiarMRU.FlatStyle = FlatStyle.Flat;
             BtnLimpiarMRU.ForeColor = Color.White;
-            BtnLimpiarMRU.Location = new Point(179, 289);
+            BtnLimpiarMRU.Location = new Point(207, 374);
             BtnLimpiarMRU.Name = "BtnLimpiarMRU";
             BtnLimpiarMRU.Size = new Size(142, 35);
             BtnLimpiarMRU.TabIndex = 24;
@@ -121,7 +96,7 @@
             BtnMRU.FlatStyle = FlatStyle.Flat;
             BtnMRU.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             BtnMRU.ForeColor = Color.Navy;
-            BtnMRU.Location = new Point(62, 289);
+            BtnMRU.Location = new Point(90, 374);
             BtnMRU.Name = "BtnMRU";
             BtnMRU.Size = new Size(111, 36);
             BtnMRU.TabIndex = 23;
@@ -130,65 +105,79 @@
             BtnMRU.UseVisualStyleBackColor = false;
             BtnMRU.Click += BtnMRU_Click;
             // 
-            // lblVelociad
+            // pictureBox1
             // 
-            lblVelociad.AutoSize = true;
-            lblVelociad.Location = new Point(407, 119);
-            lblVelociad.Name = "lblVelociad";
-            lblVelociad.Size = new Size(0, 15);
-            lblVelociad.TabIndex = 25;
+            pictureBox1.BackColor = Color.White;
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox1.Location = new Point(63, 36);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(297, 266);
+            pictureBox1.TabIndex = 28;
+            pictureBox1.TabStop = false;
             // 
-            // lblDistancia
+            // label1
             // 
-            lblDistancia.AutoSize = true;
-            lblDistancia.Location = new Point(407, 144);
-            lblDistancia.Name = "lblDistancia";
-            lblDistancia.Size = new Size(0, 15);
-            lblDistancia.TabIndex = 26;
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(293, 140);
+            label1.Name = "label1";
+            label1.Size = new Size(97, 20);
+            label1.TabIndex = 29;
+            label1.Text = "Distancia (m)";
             // 
-            // LblTiempo
+            // label2
             // 
-            LblTiempo.AutoSize = true;
-            LblTiempo.Location = new Point(407, 166);
-            LblTiempo.Name = "LblTiempo";
-            LblTiempo.Size = new Size(0, 15);
-            LblTiempo.TabIndex = 27;
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(101, 334);
+            label2.Name = "label2";
+            label2.Size = new Size(114, 20);
+            label2.TabIndex = 30;
+            label2.Text = "Velocidad (m/s)";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Location = new Point(251, 334);
+            label3.Name = "label3";
+            label3.Size = new Size(80, 20);
+            label3.TabIndex = 31;
+            label3.Text = "Tiempo (s)";
             // 
             // EcuaciónH
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(LblTiempo);
-            Controls.Add(lblDistancia);
-            Controls.Add(lblVelociad);
+            BackColor = Color.White;
+            ClientSize = new Size(450, 436);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(BtnLimpiarMRU);
             Controls.Add(BtnMRU);
             Controls.Add(TxtDistancia);
             Controls.Add(txtTiempo);
             Controls.Add(TxtVelocidad);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(pictureBox1);
             Name = "EcuaciónH";
             Text = "MRU";
             Load += EcuaciónH_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Label label1;
-        private Label label2;
-        private Label label3;
         private TextBox TxtVelocidad;
         private TextBox txtTiempo;
         private TextBox TxtDistancia;
         private RJButton.RJButton BtnLimpiarMRU;
         private RJButton.RJButton BtnMRU;
-        private Label lblVelociad;
-        private Label lblDistancia;
-        private Label LblTiempo;
+        private PictureBox pictureBox1;
+        private Label label1;
+        private Label label2;
+        private Label label3;
     }
 }

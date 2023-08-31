@@ -17,6 +17,8 @@ namespace física_EH
         public MRUV()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.Manual;
+            this.Location = new Point(0, 0);
         }
         public void BtnCalcular_Click(object sender, EventArgs e)
         {

@@ -16,6 +16,8 @@ namespace física_EH
         public Acustica()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.Manual;
+            this.Location = new Point(0, 0);
         }
         //velocidad del sonido
         private void BtnCalcular_Click(object sender, EventArgs e)

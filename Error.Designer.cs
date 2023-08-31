@@ -59,6 +59,7 @@
             // 
             // txtvalA
             // 
+            txtvalA.BorderStyle = BorderStyle.FixedSingle;
             txtvalA.Location = new Point(193, 87);
             txtvalA.Name = "txtvalA";
             txtvalA.Size = new Size(100, 23);
@@ -66,6 +67,7 @@
             // 
             // txtvalEx
             // 
+            txtvalEx.BorderStyle = BorderStyle.FixedSingle;
             txtvalEx.Location = new Point(196, 138);
             txtvalEx.Name = "txtvalEx";
             txtvalEx.Size = new Size(100, 23);
@@ -74,7 +76,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(131, 215);
+            label3.Location = new Point(128, 201);
             label3.Name = "label3";
             label3.Size = new Size(59, 15);
             label3.TabIndex = 5;
@@ -83,7 +85,7 @@
             // lblporerror1
             // 
             lblporerror1.AutoSize = true;
-            lblporerror1.Location = new Point(195, 215);
+            lblporerror1.Location = new Point(192, 201);
             lblporerror1.Name = "lblporerror1";
             lblporerror1.Size = new Size(0, 15);
             lblporerror1.TabIndex = 6;
@@ -132,7 +134,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(568, 274);
             Controls.Add(BtnLimpiar);
             Controls.Add(BtnCalcular);
             Controls.Add(lblporerror1);

@@ -41,14 +41,14 @@
             BtnCinematica.BackColor = Color.GhostWhite;
             BtnCinematica.BackgroundColor = Color.GhostWhite;
             BtnCinematica.BorderColor = Color.PaleVioletRed;
-            BtnCinematica.BorderRadius = 44;
+            BtnCinematica.BorderRadius = 75;
             BtnCinematica.BorderSize = 1;
             BtnCinematica.FlatAppearance.BorderSize = 0;
             BtnCinematica.FlatStyle = FlatStyle.Flat;
             BtnCinematica.ForeColor = Color.White;
-            BtnCinematica.Location = new Point(63, 72);
+            BtnCinematica.Location = new Point(45, 51);
             BtnCinematica.Name = "BtnCinematica";
-            BtnCinematica.Size = new Size(91, 87);
+            BtnCinematica.Size = new Size(150, 149);
             BtnCinematica.TabIndex = 26;
             BtnCinematica.TextColor = Color.White;
             BtnCinematica.UseVisualStyleBackColor = false;
@@ -59,14 +59,14 @@
             BtnDinamica.BackColor = Color.GhostWhite;
             BtnDinamica.BackgroundColor = Color.GhostWhite;
             BtnDinamica.BorderColor = Color.PaleVioletRed;
-            BtnDinamica.BorderRadius = 44;
+            BtnDinamica.BorderRadius = 75;
             BtnDinamica.BorderSize = 1;
             BtnDinamica.FlatAppearance.BorderSize = 0;
             BtnDinamica.FlatStyle = FlatStyle.Flat;
             BtnDinamica.ForeColor = Color.White;
-            BtnDinamica.Location = new Point(215, 72);
+            BtnDinamica.Location = new Point(265, 51);
             BtnDinamica.Name = "BtnDinamica";
-            BtnDinamica.Size = new Size(91, 87);
+            BtnDinamica.Size = new Size(150, 149);
             BtnDinamica.TabIndex = 28;
             BtnDinamica.TextColor = Color.White;
             BtnDinamica.UseVisualStyleBackColor = false;
@@ -76,17 +76,17 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(63, 162);
+            label5.Location = new Point(75, 203);
             label5.Name = "label5";
             label5.Size = new Size(87, 21);
             label5.TabIndex = 27;
-            label5.Text = "Cinematica";
+            label5.Text = "Cinemática";
             // 
             // Dinámica
             // 
             Dinámica.AutoSize = true;
             Dinámica.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            Dinámica.Location = new Point(229, 162);
+            Dinámica.Location = new Point(301, 203);
             Dinámica.Name = "Dinámica";
             Dinámica.Size = new Size(87, 21);
             Dinámica.TabIndex = 29;
@@ -96,7 +96,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(500, 288);
             Controls.Add(Dinámica);
             Controls.Add(BtnDinamica);
             Controls.Add(label5);

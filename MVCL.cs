@@ -16,6 +16,8 @@ namespace física_EH
         public MVCL()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.Manual;
+            this.Location = new Point(0, 0);
         }
 
         private void MVCL_Load(object sender, EventArgs e)

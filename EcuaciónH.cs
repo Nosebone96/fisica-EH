@@ -7,6 +7,8 @@ namespace física_EH
         public EcuaciónH()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.Manual;
+            this.Location = new Point(0, 0);
         }
 
         private void BtnMRU_Click(object sender, EventArgs e)
@@ -30,9 +32,21 @@ namespace física_EH
                 velocidad = distancia / tiempo;
             }
 final:;
-            lblDistancia.Text = "La distancia es: " + distancia + "m";
-            lblVelociad.Text = "La velocidad es: " + velocidad + "m/s";
-            LblTiempo.Text = "El tiempo es: " + tiempo + "s";
+            int indice = 0;
+            if (string.IsNullOrEmpty(txtTiempo.Text)) { indice++; }
+            if (string.IsNullOrEmpty(TxtDistancia.Text)) { indice++; }
+            if (string.IsNullOrEmpty(TxtVelocidad.Text)) { indice++; }
+            if (indice >= 2) { 
+                MessageBox.Show("Los datos digitados son incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); 
+                velocidad = 0; 
+                tiempo = 0; 
+                distancia = 0; 
+            }
+            txtTiempo.Text = "" + tiempo;
+            TxtDistancia.Text = "" + distancia;
+            TxtVelocidad.Text = "" + velocidad;
+            BtnMRU.Enabled = false;
+            BtnLimpiarMRU.Enabled = true;
         }
 
         private void EcuaciónH_Load(object sender, EventArgs e)
@@ -42,12 +56,11 @@ final:;
 
         private void BtnLimpiarMRU_Click(object sender, EventArgs e)
         {
-            lblDistancia.Text = "";
-            lblVelociad.Text = "";
-            LblTiempo.Text = "";
             txtTiempo.Text = "";
             TxtDistancia.Text = "";
             TxtVelocidad.Text = "";
+            BtnMRU.Enabled = true;
+            BtnLimpiarMRU.Enabled = false;
         }
     }
 }

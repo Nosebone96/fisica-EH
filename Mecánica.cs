@@ -15,6 +15,8 @@ namespace física_EH
         public Mecánica()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.Manual;
+            this.Location = new Point(0, 0);
         }
 
 

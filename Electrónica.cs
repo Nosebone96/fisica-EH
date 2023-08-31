@@ -142,14 +142,16 @@ namespace física_EH
             {
                 ResistenciaOhm = VoltageOhm / CorrienteOhm;
             }
-            if ((TxtCorrienteOhm.Text != "" && (TxtResistenciaOhm.Text == "" && TxtVoltageOhm.Text == "")) ||
-                    (TxtResistenciaOhm.Text != "" && (TxtCorrienteOhm.Text == "" && TxtVoltageOhm.Text == "")) ||
-                    (TxtVoltageOhm.Text != "" && (TxtCorrienteOhm.Text == "" && TxtResistenciaOhm.Text == "")))
-            {
-                MessageBox.Show("Los datos digitados son incorrectos", "Error");
-                VoltageOhm = 0;
-                CorrienteOhm = 0;
-                ResistenciaOhm = 0;
+            int indice = 0;
+            if (string.IsNullOrEmpty(TxtCorrienteOhm.Text)) { indice++; }
+            if (string.IsNullOrEmpty(TxtResistenciaOhm.Text)) { indice++; }
+            if (string.IsNullOrEmpty(TxtVoltageOhm.Text)) { indice++; }
+            if (indice >= 2) 
+            { 
+              MessageBox.Show("Los datos digitados son incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+              CorrienteOhm = 0; 
+              ResistenciaOhm = 0; 
+              VoltageOhm = 0; 
             }
             TxtVoltageOhm.Text = "" + VoltageOhm;
             TxtResistenciaOhm.Text = "" + ResistenciaOhm;
