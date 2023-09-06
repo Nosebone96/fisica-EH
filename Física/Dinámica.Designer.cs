@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.StartPosition = FormStartPosition.Manual;
+            this.Location = new Point(0, 0);
             RJButton.RJButton BtnNewton;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dinámica));
             label3 = new Label();

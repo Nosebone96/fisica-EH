@@ -35,6 +35,7 @@
             RJButton.RJButton BtnAcustica;
             RJButton.RJButton BtnOptica;
             RJButton.RJButton BtnMecánica;
+            RJButton.RJButton BtnCalcularCilindro;
             BtnCronómetro = new Button();
             label2 = new Label();
             label4 = new Label();
@@ -44,12 +45,18 @@
             label6 = new Label();
             label8 = new Label();
             label5 = new Label();
+            rjButton1 = new RJButton.RJButton();
+            rjButton2 = new RJButton.RJButton();
+            rjButton3 = new RJButton.RJButton();
+            rjButton4 = new RJButton.RJButton();
+            rjButton5 = new RJButton.RJButton();
             BtnPorError = new RJButton.RJButton();
             BtnElectrónica = new RJButton.RJButton();
             BtnFiguras = new RJButton.RJButton();
             BtnAcustica = new RJButton.RJButton();
             BtnOptica = new RJButton.RJButton();
             BtnMecánica = new RJButton.RJButton();
+            BtnCalcularCilindro = new RJButton.RJButton();
             SuspendLayout();
             // 
             // BtnPorError
@@ -58,7 +65,7 @@
             BtnPorError.BackgroundColor = Color.MediumSlateBlue;
             BtnPorError.BackgroundImage = (Image)resources.GetObject("BtnPorError.BackgroundImage");
             BtnPorError.BackgroundImageLayout = ImageLayout.Stretch;
-            BtnPorError.BorderColor = Color.Purple;
+            BtnPorError.BorderColor = Color.Black;
             BtnPorError.BorderRadius = 44;
             BtnPorError.BorderSize = 1;
             BtnPorError.Cursor = Cursors.Hand;
@@ -77,7 +84,7 @@
             // 
             BtnElectrónica.BackColor = Color.MediumSlateBlue;
             BtnElectrónica.BackgroundColor = Color.MediumSlateBlue;
-            BtnElectrónica.BorderColor = Color.PaleVioletRed;
+            BtnElectrónica.BorderColor = Color.Black;
             BtnElectrónica.BorderRadius = 44;
             BtnElectrónica.BorderSize = 1;
             BtnElectrónica.FlatAppearance.BorderSize = 0;
@@ -152,7 +159,7 @@
             // 
             BtnMecánica.BackColor = Color.MediumSlateBlue;
             BtnMecánica.BackgroundColor = Color.MediumSlateBlue;
-            BtnMecánica.BorderColor = Color.PaleVioletRed;
+            BtnMecánica.BorderColor = Color.Black;
             BtnMecánica.BorderRadius = 44;
             BtnMecánica.BorderSize = 1;
             BtnMecánica.FlatAppearance.BorderSize = 0;
@@ -166,12 +173,31 @@
             BtnMecánica.UseVisualStyleBackColor = false;
             BtnMecánica.Click += BtnMecánica_Click;
             // 
+            // BtnCalcularCilindro
+            // 
+            BtnCalcularCilindro.BackColor = Color.FromArgb(224, 224, 224);
+            BtnCalcularCilindro.BackgroundColor = Color.FromArgb(224, 224, 224);
+            BtnCalcularCilindro.BorderColor = Color.FromArgb(0, 0, 192);
+            BtnCalcularCilindro.BorderRadius = 1;
+            BtnCalcularCilindro.BorderSize = 2;
+            BtnCalcularCilindro.FlatAppearance.BorderSize = 0;
+            BtnCalcularCilindro.FlatStyle = FlatStyle.Flat;
+            BtnCalcularCilindro.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            BtnCalcularCilindro.ForeColor = Color.Navy;
+            BtnCalcularCilindro.Location = new Point(539, 304);
+            BtnCalcularCilindro.Name = "BtnCalcularCilindro";
+            BtnCalcularCilindro.Size = new Size(111, 36);
+            BtnCalcularCilindro.TabIndex = 40;
+            BtnCalcularCilindro.Text = "Calcular";
+            BtnCalcularCilindro.TextColor = Color.Navy;
+            BtnCalcularCilindro.UseVisualStyleBackColor = false;
+            // 
             // BtnCronómetro
             // 
             BtnCronómetro.BackColor = Color.Green;
             BtnCronómetro.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             BtnCronómetro.ForeColor = Color.White;
-            BtnCronómetro.Location = new Point(376, 139);
+            BtnCronómetro.Location = new Point(376, 12);
             BtnCronómetro.Name = "BtnCronómetro";
             BtnCronómetro.Size = new Size(128, 62);
             BtnCronómetro.TabIndex = 3;
@@ -182,6 +208,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = Color.White;
             label2.Location = new Point(45, 230);
             label2.Name = "label2";
             label2.Size = new Size(144, 21);
@@ -192,6 +219,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.ForeColor = SystemColors.Control;
             label4.Location = new Point(221, 103);
             label4.Name = "label4";
             label4.Size = new Size(141, 20);
@@ -200,21 +228,21 @@
             // 
             // Btnpor
             // 
-            Btnpor.BackColor = Color.FromArgb(224, 224, 224);
-            Btnpor.BackgroundColor = Color.FromArgb(224, 224, 224);
-            Btnpor.BorderColor = Color.FromArgb(0, 0, 192);
+            Btnpor.BackColor = Color.FromArgb(54, 57, 62);
+            Btnpor.BackgroundColor = Color.FromArgb(54, 57, 62);
+            Btnpor.BorderColor = Color.Black;
             Btnpor.BorderRadius = 1;
-            Btnpor.BorderSize = 2;
+            Btnpor.BorderSize = 1;
             Btnpor.FlatAppearance.BorderSize = 0;
             Btnpor.FlatStyle = FlatStyle.Flat;
             Btnpor.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            Btnpor.ForeColor = Color.Navy;
-            Btnpor.Location = new Point(390, 288);
+            Btnpor.ForeColor = Color.White;
+            Btnpor.Location = new Point(539, 48);
             Btnpor.Name = "Btnpor";
             Btnpor.Size = new Size(111, 36);
             Btnpor.TabIndex = 19;
-            Btnpor.Text = "Calcular";
-            Btnpor.TextColor = Color.Navy;
+            Btnpor.Text = "CALCULAR";
+            Btnpor.TextColor = Color.White;
             Btnpor.UseVisualStyleBackColor = false;
             // 
             // BtnLimpiar
@@ -229,7 +257,7 @@
             BtnLimpiar.FlatAppearance.BorderSize = 0;
             BtnLimpiar.FlatStyle = FlatStyle.Flat;
             BtnLimpiar.ForeColor = Color.White;
-            BtnLimpiar.Location = new Point(376, 224);
+            BtnLimpiar.Location = new Point(698, 304);
             BtnLimpiar.Name = "BtnLimpiar";
             BtnLimpiar.Size = new Size(142, 35);
             BtnLimpiar.TabIndex = 22;
@@ -240,6 +268,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = Color.White;
             label1.Location = new Point(259, 372);
             label1.Name = "label1";
             label1.Size = new Size(64, 20);
@@ -250,6 +279,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.ForeColor = SystemColors.ControlLightLight;
             label6.Location = new Point(245, 231);
             label6.Name = "label6";
             label6.Size = new Size(92, 40);
@@ -260,6 +290,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            label8.ForeColor = Color.White;
             label8.Location = new Point(70, 371);
             label8.Name = "label8";
             label8.Size = new Size(92, 40);
@@ -270,17 +301,125 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.ForeColor = Color.White;
             label5.Location = new Point(78, 102);
             label5.Name = "label5";
             label5.Size = new Size(72, 20);
             label5.TabIndex = 34;
             label5.Text = "Mecánica";
             // 
+            // rjButton1
+            // 
+            rjButton1.BackColor = Color.FromArgb(54, 57, 62);
+            rjButton1.BackgroundColor = Color.FromArgb(54, 57, 62);
+            rjButton1.BackgroundImageLayout = ImageLayout.Stretch;
+            rjButton1.BorderColor = Color.Black;
+            rjButton1.BorderRadius = 15;
+            rjButton1.BorderSize = 1;
+            rjButton1.FlatAppearance.BorderSize = 0;
+            rjButton1.FlatStyle = FlatStyle.Flat;
+            rjButton1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            rjButton1.ForeColor = Color.White;
+            rjButton1.Location = new Point(688, 49);
+            rjButton1.Name = "rjButton1";
+            rjButton1.Size = new Size(142, 35);
+            rjButton1.TabIndex = 35;
+            rjButton1.Text = "LIMPIAR";
+            rjButton1.TextColor = Color.White;
+            rjButton1.UseVisualStyleBackColor = false;
+            // 
+            // rjButton2
+            // 
+            rjButton2.BackColor = Color.FromArgb(54, 57, 62);
+            rjButton2.BackgroundColor = Color.FromArgb(54, 57, 62);
+            rjButton2.BorderColor = Color.FromArgb(54, 57, 62);
+            rjButton2.BorderRadius = 1;
+            rjButton2.BorderSize = 3;
+            rjButton2.FlatAppearance.BorderSize = 0;
+            rjButton2.FlatStyle = FlatStyle.Flat;
+            rjButton2.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            rjButton2.ForeColor = Color.White;
+            rjButton2.Location = new Point(539, 138);
+            rjButton2.Name = "rjButton2";
+            rjButton2.Size = new Size(121, 36);
+            rjButton2.TabIndex = 36;
+            rjButton2.Text = "📅CALCULAR";
+            rjButton2.TextColor = Color.White;
+            rjButton2.UseVisualStyleBackColor = false;
+            rjButton2.Click += rjButton2_Click;
+            // 
+            // rjButton3
+            // 
+            rjButton3.BackColor = Color.FromArgb(54, 57, 62);
+            rjButton3.BackgroundColor = Color.FromArgb(54, 57, 62);
+            rjButton3.BackgroundImageLayout = ImageLayout.Stretch;
+            rjButton3.BorderColor = Color.FromArgb(54, 57, 62);
+            rjButton3.BorderRadius = 15;
+            rjButton3.BorderSize = 3;
+            rjButton3.FlatAppearance.BorderSize = 0;
+            rjButton3.FlatStyle = FlatStyle.Flat;
+            rjButton3.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            rjButton3.ForeColor = Color.White;
+            rjButton3.Location = new Point(698, 139);
+            rjButton3.Name = "rjButton3";
+            rjButton3.Size = new Size(142, 35);
+            rjButton3.TabIndex = 37;
+            rjButton3.Text = "\U0001f9f9  LIMPIAR";
+            rjButton3.TextColor = Color.White;
+            rjButton3.UseVisualStyleBackColor = false;
+            // 
+            // rjButton4
+            // 
+            rjButton4.BackColor = Color.FromArgb(54, 57, 62);
+            rjButton4.BackgroundColor = Color.FromArgb(54, 57, 62);
+            rjButton4.BorderColor = Color.White;
+            rjButton4.BorderRadius = 1;
+            rjButton4.BorderSize = 1;
+            rjButton4.FlatAppearance.BorderSize = 0;
+            rjButton4.FlatStyle = FlatStyle.Flat;
+            rjButton4.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            rjButton4.ForeColor = Color.White;
+            rjButton4.Location = new Point(539, 215);
+            rjButton4.Name = "rjButton4";
+            rjButton4.Size = new Size(121, 36);
+            rjButton4.TabIndex = 38;
+            rjButton4.Text = "📅 CALCULAR";
+            rjButton4.TextColor = Color.White;
+            rjButton4.UseVisualStyleBackColor = false;
+            // 
+            // rjButton5
+            // 
+            rjButton5.BackColor = Color.FromArgb(54, 57, 62);
+            rjButton5.BackgroundColor = Color.FromArgb(54, 57, 62);
+            rjButton5.BackgroundImageLayout = ImageLayout.Stretch;
+            rjButton5.BorderColor = Color.White;
+            rjButton5.BorderRadius = 15;
+            rjButton5.BorderSize = 1;
+            rjButton5.FlatAppearance.BorderSize = 0;
+            rjButton5.FlatStyle = FlatStyle.Flat;
+            rjButton5.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            rjButton5.ForeColor = Color.White;
+            rjButton5.Location = new Point(698, 216);
+            rjButton5.Name = "rjButton5";
+            rjButton5.Size = new Size(142, 35);
+            rjButton5.TabIndex = 39;
+            rjButton5.Text = "\U0001f9f9  LIMPIAR";
+            rjButton5.TextColor = Color.White;
+            rjButton5.UseMnemonic = false;
+            rjButton5.UseVisualStyleBackColor = true;
+            // 
             // Menú
             // 
             AutoScaleDimensions = new SizeF(6F, 13F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(526, 452);
+            BackColor = Color.FromArgb(54, 57, 62);
+            ClientSize = new Size(922, 452);
+            Controls.Add(BtnCalcularCilindro);
+            Controls.Add(rjButton5);
+            Controls.Add(rjButton4);
+            Controls.Add(rjButton3);
+            Controls.Add(rjButton2);
+            Controls.Add(rjButton1);
             Controls.Add(label5);
             Controls.Add(BtnMecánica);
             Controls.Add(label8);
@@ -297,8 +436,9 @@
             Controls.Add(BtnPorError);
             Controls.Add(BtnCronómetro);
             Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Menú";
-            Text = " ";
+            Text = " Menú";
             Load += Menú_Load;
             ResumeLayout(false);
             PerformLayout();
@@ -314,5 +454,10 @@
         private Label label6;
         private Label label8;
         private Label label5;
+        private RJButton.RJButton rjButton1;
+        private RJButton.RJButton rjButton2;
+        private RJButton.RJButton rjButton3;
+        private RJButton.RJButton rjButton4;
+        private RJButton.RJButton rjButton5;
     }
 }

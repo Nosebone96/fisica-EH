@@ -16,6 +16,8 @@
             if (disposing && (components != null))
             {
                 components.Dispose();
+                this.StartPosition = FormStartPosition.Manual;
+                this.Location = new Point(0, 0);
             }
             base.Dispose(disposing);
         }

@@ -3,23 +3,20 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Drawing.Text;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 namespace física_EH
 {
-    public partial class Electrónica : Form
+    public partial class Resistencia : Form
     {
-        public Electrónica()
+        public Resistencia()
         {
             InitializeComponent();
-            this.StartPosition = FormStartPosition.Manual;
-            this.Location = new Point(0, 0);
+
         }
-        #region Calcular Resistencia
         class Franjas
         {
             public int Franja1 { get; set; }
@@ -29,11 +26,20 @@ namespace física_EH
             public int Franja5 { get; set; }
 
         }
-        private void TabPage1_Click(object sender, EventArgs e)
+        private void BtnLimpiar_Click(object sender, EventArgs e)
         {
-
+            CbColorFranja1.SelectedIndex = -1;
+            CbColorFranja2.SelectedIndex = -1;
+            CbColorFranja3.SelectedIndex = -1;
+            ColorFranja4.SelectedIndex = -1;
+            LblValorNormal.Text = "El valor Normal o teórico es: ";
+            LblValorRealR.Text = "El valor real ronda entre: ";
+            LblTolerancia.Text = "El valor de la tolerancia es de:";
+            BtnCalcularRTeorica.Enabled = true;
+            BtnLimpiar.Enabled = false;
         }
-        private void BtnCalcularRTeorica_Click(object sender, EventArgs e)
+
+        private void BtnCalcularRTeorica_Click_1(object sender, EventArgs e)
         {
             Franjas franja = new()
             {
@@ -104,72 +110,7 @@ namespace física_EH
             double ValorTolerancia = ValorNormal * (PorcentajeTolerancia / 100);
             LblTolerancia.Text += " " + ValorTolerancia.ToString() + "Ω";
             BtnCalcularRTeorica.Enabled = false;
-            BtnLimpiarResistencia.Enabled = true;
+            BtnLimpiar.Enabled = true;
         }
-
-        private void BtnLimpiarResistencia_Click(object sender, EventArgs e)
-        {
-            CbColorFranja1.SelectedIndex = -1;
-            CbColorFranja2.SelectedIndex = -1;
-            CbColorFranja3.SelectedIndex = -1;
-            ColorFranja4.SelectedIndex = -1;
-            LblValorNormal.Text = "El valor Normal o teórico es: ";
-            LblValorRealR.Text = "El valor real ronda entre: ";
-            LblTolerancia.Text = "El valor de la tolerancia es de:";
-            BtnCalcularRTeorica.Enabled = true;
-            BtnLimpiarResistencia.Enabled = false;
-        }
-        #endregion
-        #region Ley de Ohm
-        private void TabPage2_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void BtnCalcularOhm_Click(object sender, EventArgs e)
-        {
-            _ = Double.TryParse(TxtCorrienteOhm.Text, out double CorrienteOhm);
-            _ = Double.TryParse(TxtResistenciaOhm.Text, out double ResistenciaOhm);
-            _ = Double.TryParse(TxtVoltageOhm.Text, out double VoltageOhm);
-            if (TxtVoltageOhm.Text == "")
-            {
-                VoltageOhm = CorrienteOhm * ResistenciaOhm;
-            }
-            else if (TxtCorrienteOhm.Text == "")
-            {
-                CorrienteOhm = VoltageOhm / ResistenciaOhm;
-            }
-            else if (TxtResistenciaOhm.Text == "")
-            {
-                ResistenciaOhm = VoltageOhm / CorrienteOhm;
-            }
-            int indice = 0;
-            if (string.IsNullOrEmpty(TxtCorrienteOhm.Text)) { indice++; }
-            if (string.IsNullOrEmpty(TxtResistenciaOhm.Text)) { indice++; }
-            if (string.IsNullOrEmpty(TxtVoltageOhm.Text)) { indice++; }
-            if (indice >= 2) 
-            { 
-              MessageBox.Show("Los datos digitados son incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-              CorrienteOhm = 0; 
-              ResistenciaOhm = 0; 
-              VoltageOhm = 0; 
-            }
-            TxtVoltageOhm.Text = "" + VoltageOhm;
-            TxtResistenciaOhm.Text = "" + ResistenciaOhm;
-            TxtCorrienteOhm.Text = "" + CorrienteOhm;
-            BtnCalcularOhm.Enabled = false;
-            BtnLimpiarOhm.Enabled = true;
-        }
-        private void BtnLimpiarOhm_Click(object sender, EventArgs e)
-        {
-            TxtVoltageOhm.Text = "";
-            TxtResistenciaOhm.Text = "";
-            TxtCorrienteOhm.Text = "";
-            BtnCalcularOhm.Enabled = true;
-            BtnLimpiarOhm.Enabled = false;
-        }
-        #endregion
-
-
-
     }
 }

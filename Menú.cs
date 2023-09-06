@@ -65,5 +65,10 @@ namespace física_EH
             Mecánica mecanica = new();
             mecanica.Show();
         }
+
+        private void rjButton2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
