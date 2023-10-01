@@ -36,11 +36,12 @@ final:;
             if (string.IsNullOrEmpty(txtTiempo.Text)) { indice++; }
             if (string.IsNullOrEmpty(TxtDistancia.Text)) { indice++; }
             if (string.IsNullOrEmpty(TxtVelocidad.Text)) { indice++; }
-            if (indice >= 2) { 
-                MessageBox.Show("Los datos digitados son incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); 
-                velocidad = 0; 
-                tiempo = 0; 
-                distancia = 0; 
+            if (indice >= 2)
+            {
+                MessageBox.Show("Los datos digitados son incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                velocidad = 0;
+                tiempo = 0;
+                distancia = 0;
             }
             txtTiempo.Text = "" + tiempo;
             TxtDistancia.Text = "" + distancia;

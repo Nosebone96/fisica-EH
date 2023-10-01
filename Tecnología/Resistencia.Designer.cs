@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Resistencia));
             LblTolerancia = new Label();
             LblValorRealR = new Label();
             LblValorNormal = new Label();
@@ -36,17 +35,18 @@
             ColorFranja4 = new ComboBox();
             CbColorFranja2 = new ComboBox();
             CbColorFranja1 = new ComboBox();
-            BtnCalcularRTeorica = new RJButton.RJButton();
             label4 = new Label();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
             BtnLimpiar = new RJButton.RJButton();
+            BtnCalcularRTeorica = new RJButton.RJButton();
             SuspendLayout();
             // 
             // LblTolerancia
             // 
             LblTolerancia.AutoSize = true;
+            LblTolerancia.ForeColor = SystemColors.Control;
             LblTolerancia.Location = new Point(324, 62);
             LblTolerancia.Name = "LblTolerancia";
             LblTolerancia.Size = new Size(161, 15);
@@ -56,6 +56,7 @@
             // LblValorRealR
             // 
             LblValorRealR.AutoSize = true;
+            LblValorRealR.ForeColor = SystemColors.Control;
             LblValorRealR.Location = new Point(324, 87);
             LblValorRealR.Name = "LblValorRealR";
             LblValorRealR.Size = new Size(137, 15);
@@ -65,6 +66,7 @@
             // LblValorNormal
             // 
             LblValorNormal.AutoSize = true;
+            LblValorNormal.ForeColor = SystemColors.Control;
             LblValorNormal.Location = new Point(324, 38);
             LblValorNormal.Name = "LblValorNormal";
             LblValorNormal.Size = new Size(158, 15);
@@ -119,30 +121,10 @@
             CbColorFranja1.Size = new Size(88, 23);
             CbColorFranja1.TabIndex = 67;
             // 
-            // BtnCalcularRTeorica
-            // 
-            BtnCalcularRTeorica.BackColor = Color.FromArgb(224, 224, 224);
-            BtnCalcularRTeorica.BackgroundColor = Color.FromArgb(224, 224, 224);
-            BtnCalcularRTeorica.BorderColor = Color.FromArgb(0, 0, 192);
-            BtnCalcularRTeorica.BorderRadius = 1;
-            BtnCalcularRTeorica.BorderSize = 2;
-            BtnCalcularRTeorica.Cursor = Cursors.Hand;
-            BtnCalcularRTeorica.FlatAppearance.BorderSize = 0;
-            BtnCalcularRTeorica.FlatStyle = FlatStyle.Flat;
-            BtnCalcularRTeorica.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            BtnCalcularRTeorica.ForeColor = Color.Navy;
-            BtnCalcularRTeorica.Location = new Point(34, 208);
-            BtnCalcularRTeorica.Name = "BtnCalcularRTeorica";
-            BtnCalcularRTeorica.Size = new Size(111, 36);
-            BtnCalcularRTeorica.TabIndex = 65;
-            BtnCalcularRTeorica.Text = "Calcular";
-            BtnCalcularRTeorica.TextColor = Color.Navy;
-            BtnCalcularRTeorica.UseVisualStyleBackColor = false;
-            BtnCalcularRTeorica.Click += BtnCalcularRTeorica_Click_1;
-            // 
             // label4
             // 
             label4.AutoSize = true;
+            label4.ForeColor = SystemColors.Control;
             label4.Location = new Point(17, 168);
             label4.Name = "label4";
             label4.Size = new Size(183, 15);
@@ -152,6 +134,7 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.ForeColor = SystemColors.Control;
             label3.Location = new Point(17, 126);
             label3.Name = "label3";
             label3.Size = new Size(183, 15);
@@ -161,6 +144,7 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.ForeColor = SystemColors.Control;
             label2.Location = new Point(8, 82);
             label2.Name = "label2";
             label2.Size = new Size(192, 15);
@@ -170,6 +154,7 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.ForeColor = SystemColors.Control;
             label1.Location = new Point(12, 42);
             label1.Name = "label1";
             label1.Size = new Size(188, 15);
@@ -178,29 +163,51 @@
             // 
             // BtnLimpiar
             // 
-            BtnLimpiar.BackColor = Color.MediumSlateBlue;
-            BtnLimpiar.BackgroundColor = Color.MediumSlateBlue;
-            BtnLimpiar.BackgroundImage = (Image)resources.GetObject("BtnLimpiar.BackgroundImage");
+            BtnLimpiar.BackgroundColor = Color.FromArgb(54, 57, 62);
             BtnLimpiar.BackgroundImageLayout = ImageLayout.Stretch;
-            BtnLimpiar.BorderColor = Color.FromArgb(192, 0, 0);
+            BtnLimpiar.BorderColor = Color.White;
             BtnLimpiar.BorderRadius = 15;
-            BtnLimpiar.BorderSize = 2;
+            BtnLimpiar.BorderSize = 1;
             BtnLimpiar.FlatAppearance.BorderSize = 0;
             BtnLimpiar.FlatStyle = FlatStyle.Flat;
+            BtnLimpiar.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             BtnLimpiar.ForeColor = Color.White;
             BtnLimpiar.Location = new Point(185, 208);
             BtnLimpiar.Name = "BtnLimpiar";
             BtnLimpiar.Size = new Size(142, 35);
             BtnLimpiar.TabIndex = 74;
+            BtnLimpiar.Text = "\U0001f9f9  LIMPIAR";
             BtnLimpiar.TextColor = Color.White;
             BtnLimpiar.UseVisualStyleBackColor = false;
             BtnLimpiar.Click += BtnLimpiar_Click;
+            // 
+            // BtnCalcularRTeorica
+            // 
+            BtnCalcularRTeorica.BackColor = Color.FromArgb(54, 57, 62);
+            BtnCalcularRTeorica.BackgroundColor = Color.FromArgb(54, 57, 62);
+            BtnCalcularRTeorica.BorderColor = Color.White;
+            BtnCalcularRTeorica.BorderRadius = 1;
+            BtnCalcularRTeorica.BorderSize = 1;
+            BtnCalcularRTeorica.FlatAppearance.BorderSize = 0;
+            BtnCalcularRTeorica.FlatStyle = FlatStyle.Flat;
+            BtnCalcularRTeorica.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            BtnCalcularRTeorica.ForeColor = Color.White;
+            BtnCalcularRTeorica.Location = new Point(48, 208);
+            BtnCalcularRTeorica.Name = "BtnCalcularRTeorica";
+            BtnCalcularRTeorica.Size = new Size(121, 36);
+            BtnCalcularRTeorica.TabIndex = 75;
+            BtnCalcularRTeorica.Text = "📅 CALCULAR";
+            BtnCalcularRTeorica.TextColor = Color.White;
+            BtnCalcularRTeorica.UseVisualStyleBackColor = false;
+            BtnCalcularRTeorica.Click += BtnCalcularRTeorica_Click;
             // 
             // Resistencia
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(54, 57, 62);
             ClientSize = new Size(728, 274);
+            Controls.Add(BtnCalcularRTeorica);
             Controls.Add(BtnLimpiar);
             Controls.Add(LblTolerancia);
             Controls.Add(LblValorRealR);
@@ -209,7 +216,6 @@
             Controls.Add(ColorFranja4);
             Controls.Add(CbColorFranja2);
             Controls.Add(CbColorFranja1);
-            Controls.Add(BtnCalcularRTeorica);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -230,11 +236,11 @@
         private ComboBox ColorFranja4;
         private ComboBox CbColorFranja2;
         private ComboBox CbColorFranja1;
-        private RJButton.RJButton BtnCalcularRTeorica;
         private Label label4;
         private Label label3;
         private Label label2;
         private Label label1;
         private RJButton.RJButton BtnLimpiar;
+        private RJButton.RJButton BtnCalcularRTeorica;
     }
 }

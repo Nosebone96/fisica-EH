@@ -87,9 +87,9 @@ siguiente1:
                         distancia = velocidadFinal * Tiempo - 0.5 * aceleracion * Math.Pow(Tiempo, 2);
                         goto siguiente2;
                     }
-                    if (txtVelocidadInicial.Text != "" && txtVelocidadFinal.Text != "" && txtTiempo.Text != "")
+                    if (txtVelocidadInicial.Text != "" && txtVelocidadFinal.Text != "" && txtGravedad.Text != "")
                     {
-                        distancia = ((velocidadInicial + velocidadFinal) / 2) * Tiempo;
+                        distancia = (Math.Pow(velocidadFinal, 2) - Math.Pow(velocidadInicial, 2)) / (2 * aceleracion);
                         goto siguiente2;
                     }
                 }

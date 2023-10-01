@@ -19,19 +19,38 @@ namespace física_EH
             this.Location = new Point(0, 0);
         }
 
-
-        private void BtnDinamica_Click(object sender, EventArgs e)
+        private void BtnMRU_Click(object sender, EventArgs e)
         {
-            Dinámica dinamica = new();
-            dinamica.Show();
+            EcuaciónH ventanaEcuaciónH = new();
+            ventanaEcuaciónH.Show();
             this.Close();
         }
 
-        private void BtnCinematica_Click(object sender, EventArgs e)
+        private void BtnMRUV_Click(object sender, EventArgs e)
         {
-            Cinematica cinematica = new();
-            cinematica.Show();
+            MRUV MRUVF = new();
+            MRUVF.Show();
             this.Close();
+        }
+
+        private void BtnMVCl_Click(object sender, EventArgs e)
+        {
+            MVCL caidaLibre = new();
+            caidaLibre.Show();
+            this.Close();
+        }
+
+        private void BtnNewton_Click(object sender, EventArgs e)
+        {
+            LeyesDeNewton newton = new();
+            newton.Show();
+            this.Close();
+        }
+
+        private void BtnLeyDeHooke_Click(object sender, EventArgs e)
+        {
+            LeyDeHooke Hoooke = new();
+            Hoooke.ShowDialog();
         }
     }
 }

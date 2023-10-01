@@ -16,8 +16,6 @@
             if (disposing && (components != null))
             {
                 components.Dispose();
-                this.StartPosition = FormStartPosition.Manual;
-                this.Location = new Point(0, 0);
             }
             base.Dispose(disposing);
         }
@@ -30,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MRUV));
             BtnLimpiar = new RJButton.RJButton();
             BtnCalcular = new RJButton.RJButton();
             label1 = new Label();
@@ -59,50 +56,52 @@
             // 
             // BtnLimpiar
             // 
-            BtnLimpiar.BackColor = Color.MediumSlateBlue;
-            BtnLimpiar.BackgroundColor = Color.MediumSlateBlue;
-            BtnLimpiar.BackgroundImage = (Image)resources.GetObject("BtnLimpiar.BackgroundImage");
+            BtnLimpiar.BackColor = Color.FromArgb(54, 57, 62);
+            BtnLimpiar.BackgroundColor = Color.FromArgb(54, 57, 62);
             BtnLimpiar.BackgroundImageLayout = ImageLayout.Stretch;
-            BtnLimpiar.BorderColor = Color.FromArgb(192, 0, 0);
+            BtnLimpiar.BorderColor = Color.White;
             BtnLimpiar.BorderRadius = 15;
-            BtnLimpiar.BorderSize = 2;
+            BtnLimpiar.BorderSize = 1;
             BtnLimpiar.Cursor = Cursors.Hand;
             BtnLimpiar.FlatAppearance.BorderSize = 0;
             BtnLimpiar.FlatStyle = FlatStyle.Flat;
+            BtnLimpiar.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             BtnLimpiar.ForeColor = Color.White;
-            BtnLimpiar.Location = new Point(236, 328);
+            BtnLimpiar.Location = new Point(193, 302);
             BtnLimpiar.Name = "BtnLimpiar";
             BtnLimpiar.Size = new Size(142, 35);
             BtnLimpiar.TabIndex = 24;
+            BtnLimpiar.Text = "\U0001f9f9  LIMPIAR";
             BtnLimpiar.TextColor = Color.White;
             BtnLimpiar.UseVisualStyleBackColor = false;
             BtnLimpiar.Click += BtnLimpiar_Click;
             // 
             // BtnCalcular
             // 
-            BtnCalcular.BackColor = Color.FromArgb(224, 224, 224);
-            BtnCalcular.BackgroundColor = Color.FromArgb(224, 224, 224);
-            BtnCalcular.BorderColor = Color.FromArgb(0, 0, 192);
+            BtnCalcular.BackColor = Color.FromArgb(54, 57, 62);
+            BtnCalcular.BackgroundColor = Color.FromArgb(54, 57, 62);
+            BtnCalcular.BorderColor = Color.White;
             BtnCalcular.BorderRadius = 1;
-            BtnCalcular.BorderSize = 2;
+            BtnCalcular.BorderSize = 1;
             BtnCalcular.Cursor = Cursors.Hand;
             BtnCalcular.FlatAppearance.BorderSize = 0;
             BtnCalcular.FlatStyle = FlatStyle.Flat;
             BtnCalcular.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            BtnCalcular.ForeColor = Color.Navy;
-            BtnCalcular.Location = new Point(98, 326);
+            BtnCalcular.ForeColor = Color.White;
+            BtnCalcular.Location = new Point(55, 300);
             BtnCalcular.Name = "BtnCalcular";
-            BtnCalcular.Size = new Size(111, 36);
+            BtnCalcular.Size = new Size(121, 36);
             BtnCalcular.TabIndex = 23;
-            BtnCalcular.Text = "Calcular";
-            BtnCalcular.TextColor = Color.Navy;
+            BtnCalcular.Text = "📅 CALCULAR";
+            BtnCalcular.TextColor = Color.White;
             BtnCalcular.UseVisualStyleBackColor = false;
             BtnCalcular.Click += BtnCalcular_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(68, 47);
+            label1.ForeColor = SystemColors.Control;
+            label1.Location = new Point(30, 41);
             label1.Name = "label1";
             label1.Size = new Size(141, 15);
             label1.TabIndex = 25;
@@ -111,7 +110,8 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(76, 97);
+            label2.ForeColor = SystemColors.Control;
+            label2.Location = new Point(38, 91);
             label2.Name = "label2";
             label2.Size = new Size(133, 15);
             label2.TabIndex = 26;
@@ -120,7 +120,8 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(115, 145);
+            label3.ForeColor = SystemColors.Control;
+            label3.Location = new Point(77, 139);
             label3.Name = "label3";
             label3.Size = new Size(94, 15);
             label3.TabIndex = 27;
@@ -129,7 +130,8 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(93, 196);
+            label4.ForeColor = SystemColors.Control;
+            label4.Location = new Point(55, 190);
             label4.Name = "label4";
             label4.Size = new Size(116, 15);
             label4.TabIndex = 28;
@@ -138,7 +140,8 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(106, 251);
+            label5.ForeColor = SystemColors.Control;
+            label5.Location = new Point(68, 245);
             label5.Name = "label5";
             label5.Size = new Size(103, 15);
             label5.TabIndex = 29;
@@ -146,8 +149,9 @@
             // 
             // txtVelocidadInicial
             // 
+            txtVelocidadInicial.BorderStyle = BorderStyle.FixedSingle;
             txtVelocidadInicial.Cursor = Cursors.Hand;
-            txtVelocidadInicial.Location = new Point(236, 44);
+            txtVelocidadInicial.Location = new Point(198, 38);
             txtVelocidadInicial.Name = "txtVelocidadInicial";
             txtVelocidadInicial.Size = new Size(100, 23);
             txtVelocidadInicial.TabIndex = 30;
@@ -155,32 +159,36 @@
             // txtDistancia
             // 
             txtDistancia.BackColor = Color.White;
+            txtDistancia.BorderStyle = BorderStyle.FixedSingle;
             txtDistancia.Cursor = Cursors.Hand;
-            txtDistancia.Location = new Point(236, 248);
+            txtDistancia.Location = new Point(198, 242);
             txtDistancia.Name = "txtDistancia";
             txtDistancia.Size = new Size(100, 23);
             txtDistancia.TabIndex = 31;
             // 
             // txtAceleración
             // 
+            txtAceleración.BorderStyle = BorderStyle.FixedSingle;
             txtAceleración.Cursor = Cursors.Hand;
-            txtAceleración.Location = new Point(236, 196);
+            txtAceleración.Location = new Point(198, 190);
             txtAceleración.Name = "txtAceleración";
             txtAceleración.Size = new Size(100, 23);
             txtAceleración.TabIndex = 32;
             // 
             // txtTiempo
             // 
+            txtTiempo.BorderStyle = BorderStyle.FixedSingle;
             txtTiempo.Cursor = Cursors.Hand;
-            txtTiempo.Location = new Point(236, 142);
+            txtTiempo.Location = new Point(198, 136);
             txtTiempo.Name = "txtTiempo";
             txtTiempo.Size = new Size(100, 23);
             txtTiempo.TabIndex = 33;
             // 
             // txtVelocidadFinal
             // 
+            txtVelocidadFinal.BorderStyle = BorderStyle.FixedSingle;
             txtVelocidadFinal.Cursor = Cursors.Hand;
-            txtVelocidadFinal.Location = new Point(236, 94);
+            txtVelocidadFinal.Location = new Point(198, 88);
             txtVelocidadFinal.Name = "txtVelocidadFinal";
             txtVelocidadFinal.Size = new Size(100, 23);
             txtVelocidadFinal.TabIndex = 34;
@@ -188,7 +196,8 @@
             // lblVelocidadFinal
             // 
             lblVelocidadFinal.AutoSize = true;
-            lblVelocidadFinal.Location = new Point(507, 150);
+            lblVelocidadFinal.ForeColor = SystemColors.Control;
+            lblVelocidadFinal.Location = new Point(469, 144);
             lblVelocidadFinal.Name = "lblVelocidadFinal";
             lblVelocidadFinal.Size = new Size(0, 15);
             lblVelocidadFinal.TabIndex = 35;
@@ -196,7 +205,8 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(422, 81);
+            label6.ForeColor = SystemColors.Control;
+            label6.Location = new Point(384, 75);
             label6.Name = "label6";
             label6.Size = new Size(0, 15);
             label6.TabIndex = 36;
@@ -204,7 +214,8 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(422, 52);
+            label7.ForeColor = SystemColors.Control;
+            label7.Location = new Point(384, 46);
             label7.Name = "label7";
             label7.Size = new Size(74, 15);
             label7.TabIndex = 37;
@@ -213,7 +224,8 @@
             // lblTiempo
             // 
             lblTiempo.AutoSize = true;
-            lblTiempo.Location = new Point(507, 53);
+            lblTiempo.ForeColor = SystemColors.Control;
+            lblTiempo.Location = new Point(469, 47);
             lblTiempo.Name = "lblTiempo";
             lblTiempo.Size = new Size(0, 15);
             lblTiempo.TabIndex = 38;
@@ -221,7 +233,8 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(400, 81);
+            label8.ForeColor = SystemColors.Control;
+            label8.Location = new Point(362, 75);
             label8.Name = "label8";
             label8.Size = new Size(96, 15);
             label8.TabIndex = 39;
@@ -230,7 +243,8 @@
             // lblAceleración
             // 
             lblAceleración.AutoSize = true;
-            lblAceleración.Location = new Point(506, 83);
+            lblAceleración.ForeColor = SystemColors.Control;
+            lblAceleración.Location = new Point(468, 77);
             lblAceleración.Name = "lblAceleración";
             lblAceleración.Size = new Size(0, 15);
             lblAceleración.TabIndex = 40;
@@ -238,7 +252,8 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(410, 115);
+            label9.ForeColor = SystemColors.Control;
+            label9.Location = new Point(372, 109);
             label9.Name = "label9";
             label9.Size = new Size(86, 15);
             label9.TabIndex = 41;
@@ -247,7 +262,8 @@
             // lblDistancia
             // 
             lblDistancia.AutoSize = true;
-            lblDistancia.Location = new Point(500, 114);
+            lblDistancia.ForeColor = SystemColors.Control;
+            lblDistancia.Location = new Point(462, 108);
             lblDistancia.Name = "lblDistancia";
             lblDistancia.Size = new Size(0, 15);
             lblDistancia.TabIndex = 42;
@@ -255,7 +271,8 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(384, 150);
+            label11.ForeColor = SystemColors.Control;
+            label11.Location = new Point(346, 144);
             label11.Name = "label11";
             label11.Size = new Size(116, 15);
             label11.TabIndex = 46;
@@ -264,7 +281,8 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(500, 148);
+            label12.ForeColor = SystemColors.Control;
+            label12.Location = new Point(462, 142);
             label12.Name = "label12";
             label12.Size = new Size(0, 15);
             label12.TabIndex = 47;
@@ -272,7 +290,8 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(372, 183);
+            label10.ForeColor = SystemColors.Control;
+            label10.Location = new Point(334, 177);
             label10.Name = "label10";
             label10.Size = new Size(124, 15);
             label10.TabIndex = 48;
@@ -281,7 +300,8 @@
             // lblVelocidadInicial
             // 
             lblVelocidadInicial.AutoSize = true;
-            lblVelocidadInicial.Location = new Point(503, 183);
+            lblVelocidadInicial.ForeColor = SystemColors.Control;
+            lblVelocidadInicial.Location = new Point(465, 177);
             lblVelocidadInicial.Name = "lblVelocidadInicial";
             lblVelocidadInicial.Size = new Size(0, 15);
             lblVelocidadInicial.TabIndex = 49;
@@ -290,7 +310,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = Color.FromArgb(54, 57, 62);
+            ClientSize = new Size(710, 362);
             Controls.Add(lblVelocidadInicial);
             Controls.Add(label10);
             Controls.Add(label12);
@@ -316,6 +337,7 @@
             Controls.Add(BtnLimpiar);
             Controls.Add(BtnCalcular);
             Name = "MRUV";
+            StartPosition = FormStartPosition.Manual;
             Text = "MRUV";
             Load += MRUV_Load;
             ResumeLayout(false);

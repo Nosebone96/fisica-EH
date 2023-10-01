@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MVCL));
             lblVelocidadInicial = new Label();
             label10 = new Label();
             label12 = new Label();
@@ -58,6 +57,7 @@
             // lblVelocidadInicial
             // 
             lblVelocidadInicial.AutoSize = true;
+            lblVelocidadInicial.ForeColor = SystemColors.Control;
             lblVelocidadInicial.Location = new Point(482, 201);
             lblVelocidadInicial.Name = "lblVelocidadInicial";
             lblVelocidadInicial.Size = new Size(0, 15);
@@ -66,6 +66,7 @@
             // label10
             // 
             label10.AutoSize = true;
+            label10.ForeColor = SystemColors.Control;
             label10.Location = new Point(351, 201);
             label10.Name = "label10";
             label10.Size = new Size(124, 15);
@@ -75,6 +76,7 @@
             // label12
             // 
             label12.AutoSize = true;
+            label12.ForeColor = SystemColors.Control;
             label12.Location = new Point(479, 166);
             label12.Name = "label12";
             label12.Size = new Size(0, 15);
@@ -83,6 +85,7 @@
             // label11
             // 
             label11.AutoSize = true;
+            label11.ForeColor = SystemColors.Control;
             label11.Location = new Point(363, 168);
             label11.Name = "label11";
             label11.Size = new Size(116, 15);
@@ -92,6 +95,7 @@
             // lblDistancia
             // 
             lblDistancia.AutoSize = true;
+            lblDistancia.ForeColor = SystemColors.Control;
             lblDistancia.Location = new Point(479, 132);
             lblDistancia.Name = "lblDistancia";
             lblDistancia.Size = new Size(0, 15);
@@ -100,6 +104,7 @@
             // label9
             // 
             label9.AutoSize = true;
+            label9.ForeColor = SystemColors.Control;
             label9.Location = new Point(406, 132);
             label9.Name = "label9";
             label9.Size = new Size(69, 15);
@@ -109,6 +114,7 @@
             // lblAceleración
             // 
             lblAceleración.AutoSize = true;
+            lblAceleración.ForeColor = SystemColors.Control;
             lblAceleración.Location = new Point(485, 101);
             lblAceleración.Name = "lblAceleración";
             lblAceleración.Size = new Size(0, 15);
@@ -117,6 +123,7 @@
             // label8
             // 
             label8.AutoSize = true;
+            label8.ForeColor = SystemColors.Control;
             label8.Location = new Point(390, 101);
             label8.Name = "label8";
             label8.Size = new Size(85, 15);
@@ -126,6 +133,7 @@
             // lblTiempo
             // 
             lblTiempo.AutoSize = true;
+            lblTiempo.ForeColor = SystemColors.Control;
             lblTiempo.Location = new Point(486, 71);
             lblTiempo.Name = "lblTiempo";
             lblTiempo.Size = new Size(0, 15);
@@ -134,6 +142,7 @@
             // label7
             // 
             label7.AutoSize = true;
+            label7.ForeColor = SystemColors.Control;
             label7.Location = new Point(401, 70);
             label7.Name = "label7";
             label7.Size = new Size(74, 15);
@@ -143,6 +152,7 @@
             // label6
             // 
             label6.AutoSize = true;
+            label6.ForeColor = SystemColors.Control;
             label6.Location = new Point(401, 99);
             label6.Name = "label6";
             label6.Size = new Size(0, 15);
@@ -151,6 +161,7 @@
             // lblVelocidadFinal
             // 
             lblVelocidadFinal.AutoSize = true;
+            lblVelocidadFinal.ForeColor = SystemColors.Control;
             lblVelocidadFinal.Location = new Point(486, 168);
             lblVelocidadFinal.Name = "lblVelocidadFinal";
             lblVelocidadFinal.Size = new Size(0, 15);
@@ -201,6 +212,7 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.ForeColor = SystemColors.Control;
             label5.Location = new Point(85, 269);
             label5.Name = "label5";
             label5.Size = new Size(86, 15);
@@ -210,6 +222,7 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.ForeColor = SystemColors.Control;
             label4.Location = new Point(72, 217);
             label4.Name = "label4";
             label4.Size = new Size(105, 15);
@@ -219,6 +232,7 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.ForeColor = SystemColors.Control;
             label3.Location = new Point(94, 163);
             label3.Name = "label3";
             label3.Size = new Size(94, 15);
@@ -228,6 +242,7 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.ForeColor = SystemColors.Control;
             label2.Location = new Point(55, 115);
             label2.Name = "label2";
             label2.Size = new Size(133, 15);
@@ -237,6 +252,7 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.ForeColor = SystemColors.Control;
             label1.Location = new Point(47, 65);
             label1.Name = "label1";
             label1.Size = new Size(141, 15);
@@ -245,43 +261,43 @@
             // 
             // BtnLimpiar
             // 
-            BtnLimpiar.BackColor = Color.MediumSlateBlue;
-            BtnLimpiar.BackgroundColor = Color.MediumSlateBlue;
-            BtnLimpiar.BackgroundImage = (Image)resources.GetObject("BtnLimpiar.BackgroundImage");
+            BtnLimpiar.BackgroundColor = Color.FromArgb(54, 57, 62);
             BtnLimpiar.BackgroundImageLayout = ImageLayout.Stretch;
-            BtnLimpiar.BorderColor = Color.FromArgb(192, 0, 0);
+            BtnLimpiar.BorderColor = Color.White;
             BtnLimpiar.BorderRadius = 15;
-            BtnLimpiar.BorderSize = 2;
+            BtnLimpiar.BorderSize = 1;
             BtnLimpiar.Cursor = Cursors.Hand;
             BtnLimpiar.FlatAppearance.BorderSize = 0;
             BtnLimpiar.FlatStyle = FlatStyle.Flat;
+            BtnLimpiar.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             BtnLimpiar.ForeColor = Color.White;
             BtnLimpiar.Location = new Point(215, 346);
             BtnLimpiar.Name = "BtnLimpiar";
             BtnLimpiar.Size = new Size(142, 35);
             BtnLimpiar.TabIndex = 51;
+            BtnLimpiar.Text = "\U0001f9f9  LIMPIAR";
             BtnLimpiar.TextColor = Color.White;
             BtnLimpiar.UseVisualStyleBackColor = false;
             BtnLimpiar.Click += BtnLimpiar_Click;
             // 
             // BtnCalcularMVCL
             // 
-            BtnCalcularMVCL.BackColor = Color.FromArgb(224, 224, 224);
-            BtnCalcularMVCL.BackgroundColor = Color.FromArgb(224, 224, 224);
-            BtnCalcularMVCL.BorderColor = Color.FromArgb(0, 0, 192);
+            BtnCalcularMVCL.BackColor = Color.FromArgb(54, 57, 62);
+            BtnCalcularMVCL.BackgroundColor = Color.FromArgb(54, 57, 62);
+            BtnCalcularMVCL.BorderColor = Color.White;
             BtnCalcularMVCL.BorderRadius = 1;
-            BtnCalcularMVCL.BorderSize = 2;
+            BtnCalcularMVCL.BorderSize = 1;
             BtnCalcularMVCL.Cursor = Cursors.Hand;
             BtnCalcularMVCL.FlatAppearance.BorderSize = 0;
             BtnCalcularMVCL.FlatStyle = FlatStyle.Flat;
             BtnCalcularMVCL.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            BtnCalcularMVCL.ForeColor = Color.Navy;
+            BtnCalcularMVCL.ForeColor = Color.White;
             BtnCalcularMVCL.Location = new Point(77, 344);
             BtnCalcularMVCL.Name = "BtnCalcularMVCL";
-            BtnCalcularMVCL.Size = new Size(111, 36);
+            BtnCalcularMVCL.Size = new Size(121, 36);
             BtnCalcularMVCL.TabIndex = 50;
-            BtnCalcularMVCL.Text = "Calcular";
-            BtnCalcularMVCL.TextColor = Color.Navy;
+            BtnCalcularMVCL.Text = "📅 CALCULAR";
+            BtnCalcularMVCL.TextColor = Color.White;
             BtnCalcularMVCL.UseVisualStyleBackColor = false;
             BtnCalcularMVCL.Click += BtnCalcularMVCL_Click;
             // 
@@ -289,6 +305,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(54, 57, 62);
             ClientSize = new Size(800, 450);
             Controls.Add(lblVelocidadInicial);
             Controls.Add(label10);

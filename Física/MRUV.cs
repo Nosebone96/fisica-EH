@@ -61,13 +61,18 @@ siguiente1:
 //
                 if (txtDistancia.Text == "0" || txtDistancia.Text == "")
                 {
+                    if (txtVelocidadInicial.Text != "" && txtVelocidadFinal.Text != "" && txtAceleración.Text != "")
+                    {
+                        distancia = (Math.Pow(velocidadFinal, 2) - Math.Pow(velocidadInicial, 2)) / (2 * aceleracion);
+                        goto siguiente2;
+                    }
 
                     if (txtVelocidadFinal.Text != "" && txtTiempo.Text != "" && txtAceleración.Text != "")
                     {
                         distancia = velocidadInicial * Tiempo + (aceleracion * Math.Pow(Tiempo, 2)) / 2;
                         goto siguiente2;
                     }
-                    if (txtDistancia.Text == "" && txtVelocidadInicial.Text != "" && txtTiempo.Text != "" && txtAceleración.Text != "")
+                    if (txtVelocidadInicial.Text != "" && txtTiempo.Text != "" && txtAceleración.Text != "")
                     {
                         distancia = velocidadInicial * Tiempo + 0.5 * aceleracion * Math.Pow(Tiempo, 2);
                         goto siguiente2;
@@ -89,11 +94,11 @@ siguiente2:
 //
                 if (txtTiempo.Text == "0" || txtTiempo.Text == "")
                 {
-                    /*if (txtVelocidadFinal.Text != "" && txtVelocidadInicial.Text != "" && txtAceleración.Text != "")
+                    if (txtVelocidadFinal.Text != "" && txtVelocidadInicial.Text != "" && txtAceleración.Text != "")
                     {
                         Tiempo = (velocidadFinal - velocidadInicial) / aceleracion;
                         goto siguiente3;
-                    }*/
+                    }
                     if (txtDistancia.Text != "" && txtVelocidadInicial.Text != "" && txtVelocidadFinal.Text != "")
                     {
                         Tiempo = distancia / ((velocidadInicial + velocidadFinal) / 2);
@@ -158,6 +163,8 @@ siguiente5:
             lblDistancia.Text = "" + distancia + "m";
             lblVelocidadFinal.Text = "" + velocidadFinal + "m/s";
             lblVelocidadInicial.Text = "" + velocidadInicial + "m/s";
+            BtnCalcular.Enabled = false;
+            BtnLimpiar.Enabled = true;
 
         }
         private void BtnLimpiar_Click(object sender, EventArgs e)
@@ -172,6 +179,8 @@ siguiente5:
             lblDistancia.Text = "";
             lblVelocidadFinal.Text = "";
             lblVelocidadInicial.Text = "";
+            BtnCalcular.Enabled = true;
+            BtnLimpiar.Enabled = false;
         }
 
         private void MRUV_Load(object sender, EventArgs e)

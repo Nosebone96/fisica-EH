@@ -28,8 +28,8 @@ namespace física_EH
         private void BtnCronómetro_Click(object sender, EventArgs e)
         {
             /*nombre de la pestaña = */
-            Cronómetro cronos = new();
-            cronos.Show();
+            LeyDeHooke ley = new();
+            ley.ShowDialog();
         }
         private void BtnAcustica_Click(object sender, EventArgs e)
         {
@@ -66,9 +66,21 @@ namespace física_EH
             mecanica.Show();
         }
 
-        private void rjButton2_Click(object sender, EventArgs e)
+        private void RjButton2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Matematicas_Click(object sender, EventArgs e)
+        {
+            Matemáticas matematicas = new();
+            matematicas.ShowDialog();
+        }
+
+        private void BtnQuimica_Click(object sender, EventArgs e)
+        {
+            Química quimica = new();
+            quimica.ShowDialog();
         }
     }
 }

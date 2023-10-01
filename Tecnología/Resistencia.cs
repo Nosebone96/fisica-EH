@@ -39,7 +39,7 @@ namespace física_EH
             BtnLimpiar.Enabled = false;
         }
 
-        private void BtnCalcularRTeorica_Click_1(object sender, EventArgs e)
+        private void BtnCalcularRTeorica_Click(object sender, EventArgs e)
         {
             Franjas franja = new()
             {
@@ -64,7 +64,7 @@ namespace física_EH
             double PorcentajeTolerancia = 0;
             if (franja.Franja4 == 0)
             {
-                LblValorRealR.Text += (ValorNormal * 0.95) + " a " + (ValorNormal * 1.05) + "Ω";
+                LblValorRealR.Text += (ValorNormal * 0.95) + "Ω" + " a " + (ValorNormal * 1.05) + "Ω";
                 PorcentajeTolerancia = 5;
             }
             else if (franja.Franja4 == 1)

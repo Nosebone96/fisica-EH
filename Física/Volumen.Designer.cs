@@ -88,11 +88,12 @@
             tabControl1.Location = new Point(0, 0);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(560, 339);
+            tabControl1.Size = new Size(400, 259);
             tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
+            tabPage1.BackColor = Color.FromArgb(35, 57, 62);
             tabPage1.Controls.Add(BtnLimpiarCubo);
             tabPage1.Controls.Add(BtnCubos);
             tabPage1.Controls.Add(lblVolumenCubo);
@@ -102,55 +103,55 @@
             tabPage1.Location = new Point(4, 24);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(552, 311);
+            tabPage1.Size = new Size(392, 231);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Cubos";
-            tabPage1.UseVisualStyleBackColor = true;
             // 
             // BtnLimpiarCubo
             // 
-            BtnLimpiarCubo.BackColor = Color.MediumSlateBlue;
-            BtnLimpiarCubo.BackgroundColor = Color.MediumSlateBlue;
-            BtnLimpiarCubo.BackgroundImage = (Image)resources.GetObject("BtnLimpiarCubo.BackgroundImage");
+            BtnLimpiarCubo.BackColor = Color.FromArgb(35, 57, 62);
+            BtnLimpiarCubo.BackgroundColor = Color.FromArgb(35, 57, 62);
             BtnLimpiarCubo.BackgroundImageLayout = ImageLayout.Stretch;
-            BtnLimpiarCubo.BorderColor = Color.FromArgb(192, 0, 0);
+            BtnLimpiarCubo.BorderColor = Color.White;
             BtnLimpiarCubo.BorderRadius = 15;
             BtnLimpiarCubo.BorderSize = 2;
             BtnLimpiarCubo.FlatAppearance.BorderSize = 0;
             BtnLimpiarCubo.FlatStyle = FlatStyle.Flat;
+            BtnLimpiarCubo.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             BtnLimpiarCubo.ForeColor = Color.White;
-            BtnLimpiarCubo.Location = new Point(151, 114);
+            BtnLimpiarCubo.Location = new Point(147, 120);
             BtnLimpiarCubo.Name = "BtnLimpiarCubo";
             BtnLimpiarCubo.Size = new Size(142, 35);
             BtnLimpiarCubo.TabIndex = 25;
+            BtnLimpiarCubo.Text = "\U0001f9f9  LIMPIAR";
             BtnLimpiarCubo.TextColor = Color.White;
             BtnLimpiarCubo.UseVisualStyleBackColor = false;
             BtnLimpiarCubo.Click += BtnLimpiarCubo_Click;
             // 
             // BtnCubos
             // 
-            BtnCubos.BackColor = Color.FromArgb(224, 224, 224);
-            BtnCubos.BackgroundColor = Color.FromArgb(224, 224, 224);
-            BtnCubos.BorderColor = Color.FromArgb(0, 0, 192);
+            BtnCubos.BackColor = Color.FromArgb(35, 57, 62);
+            BtnCubos.BackgroundColor = Color.FromArgb(35, 57, 62);
+            BtnCubos.BorderColor = Color.White;
             BtnCubos.BorderRadius = 1;
-            BtnCubos.BorderSize = 2;
+            BtnCubos.BorderSize = 1;
             BtnCubos.FlatAppearance.BorderSize = 0;
             BtnCubos.FlatStyle = FlatStyle.Flat;
             BtnCubos.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            BtnCubos.ForeColor = Color.Navy;
-            BtnCubos.Location = new Point(17, 114);
+            BtnCubos.ForeColor = SystemColors.Control;
+            BtnCubos.Location = new Point(13, 120);
             BtnCubos.Name = "BtnCubos";
-            BtnCubos.Size = new Size(111, 36);
+            BtnCubos.Size = new Size(128, 36);
             BtnCubos.TabIndex = 24;
-            BtnCubos.Text = "Calcular";
-            BtnCubos.TextColor = Color.Navy;
+            BtnCubos.Text = "📅CALCULAR";
+            BtnCubos.TextColor = SystemColors.Control;
             BtnCubos.UseVisualStyleBackColor = false;
             BtnCubos.Click += BtnCubos_Click;
             // 
             // lblVolumenCubo
             // 
             lblVolumenCubo.AutoSize = true;
-            lblVolumenCubo.Location = new Point(505, 168);
+            lblVolumenCubo.Location = new Point(89, 65);
             lblVolumenCubo.Name = "lblVolumenCubo";
             lblVolumenCubo.Size = new Size(0, 15);
             lblVolumenCubo.TabIndex = 4;
@@ -158,6 +159,7 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.ForeColor = SystemColors.Control;
             label2.Location = new Point(17, 65);
             label2.Name = "label2";
             label2.Size = new Size(66, 15);
@@ -174,6 +176,7 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.ForeColor = SystemColors.Control;
             label1.Location = new Point(17, 23);
             label1.Name = "label1";
             label1.Size = new Size(191, 15);
@@ -182,6 +185,7 @@
             // 
             // tabPage2
             // 
+            tabPage2.BackColor = Color.FromArgb(35, 57, 62);
             tabPage2.Controls.Add(BtnLimpiarEsfera);
             tabPage2.Controls.Add(BtnCalcularEsfera);
             tabPage2.Controls.Add(lblVolumenEsfera);
@@ -191,10 +195,9 @@
             tabPage2.Location = new Point(4, 24);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(552, 311);
+            tabPage2.Size = new Size(392, 231);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Esfera";
-            tabPage2.UseVisualStyleBackColor = true;
             // 
             // BtnLimpiarEsfera
             // 
@@ -239,7 +242,8 @@
             // lblVolumenEsfera
             // 
             lblVolumenEsfera.AutoSize = true;
-            lblVolumenEsfera.Location = new Point(109, 107);
+            lblVolumenEsfera.ForeColor = SystemColors.Control;
+            lblVolumenEsfera.Location = new Point(99, 81);
             lblVolumenEsfera.Name = "lblVolumenEsfera";
             lblVolumenEsfera.Size = new Size(0, 15);
             lblVolumenEsfera.TabIndex = 4;
@@ -247,6 +251,7 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.ForeColor = SystemColors.Control;
             label4.Location = new Point(27, 81);
             label4.Name = "label4";
             label4.Size = new Size(66, 15);
@@ -263,6 +268,7 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.ForeColor = SystemColors.Control;
             label3.Location = new Point(18, 34);
             label3.Name = "label3";
             label3.Size = new Size(145, 15);
@@ -271,6 +277,7 @@
             // 
             // TabPage3
             // 
+            TabPage3.BackColor = Color.FromArgb(35, 57, 62);
             TabPage3.Controls.Add(BtnLimpiarCilindro);
             TabPage3.Controls.Add(BtnCalcularCilindro);
             TabPage3.Controls.Add(LblVolumenCilindro);
@@ -282,10 +289,9 @@
             TabPage3.Location = new Point(4, 24);
             TabPage3.Name = "TabPage3";
             TabPage3.Padding = new Padding(3);
-            TabPage3.Size = new Size(552, 311);
+            TabPage3.Size = new Size(392, 231);
             TabPage3.TabIndex = 2;
             TabPage3.Text = "Cilindro";
-            TabPage3.UseVisualStyleBackColor = true;
             TabPage3.Click += TabPage3_Click;
             // 
             // BtnLimpiarCilindro
@@ -311,7 +317,8 @@
             // LblVolumenCilindro
             // 
             LblVolumenCilindro.AutoSize = true;
-            LblVolumenCilindro.Location = new Point(93, 121);
+            LblVolumenCilindro.ForeColor = SystemColors.Control;
+            LblVolumenCilindro.Location = new Point(93, 129);
             LblVolumenCilindro.Name = "LblVolumenCilindro";
             LblVolumenCilindro.Size = new Size(0, 15);
             LblVolumenCilindro.TabIndex = 6;
@@ -319,7 +326,8 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(21, 122);
+            label7.ForeColor = SystemColors.Control;
+            label7.Location = new Point(21, 130);
             label7.Name = "label7";
             label7.Size = new Size(66, 15);
             label7.TabIndex = 5;
@@ -342,6 +350,7 @@
             // label6
             // 
             label6.AutoSize = true;
+            label6.ForeColor = SystemColors.Control;
             label6.Location = new Point(21, 81);
             label6.Name = "label6";
             label6.Size = new Size(83, 15);
@@ -351,6 +360,7 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.ForeColor = SystemColors.Control;
             label5.Location = new Point(21, 30);
             label5.Name = "label5";
             label5.Size = new Size(86, 15);
@@ -361,7 +371,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(558, 344);
+            BackColor = Color.FromArgb(54, 57, 62);
+            ClientSize = new Size(398, 260);
             Controls.Add(tabControl1);
             Name = "Volumen";
             Text = "Volumen";

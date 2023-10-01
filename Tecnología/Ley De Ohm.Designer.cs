@@ -54,7 +54,7 @@
             BtnLimpiarOhm.FlatAppearance.BorderSize = 0;
             BtnLimpiarOhm.FlatStyle = FlatStyle.Flat;
             BtnLimpiarOhm.ForeColor = Color.White;
-            BtnLimpiarOhm.Location = new Point(152, 260);
+            BtnLimpiarOhm.Location = new Point(141, 307);
             BtnLimpiarOhm.Name = "BtnLimpiarOhm";
             BtnLimpiarOhm.Size = new Size(142, 36);
             BtnLimpiarOhm.TabIndex = 64;
@@ -74,7 +74,7 @@
             BtnCalcularOhm.FlatStyle = FlatStyle.Flat;
             BtnCalcularOhm.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             BtnCalcularOhm.ForeColor = Color.Navy;
-            BtnCalcularOhm.Location = new Point(15, 260);
+            BtnCalcularOhm.Location = new Point(12, 306);
             BtnCalcularOhm.Name = "BtnCalcularOhm";
             BtnCalcularOhm.Size = new Size(111, 36);
             BtnCalcularOhm.TabIndex = 63;
@@ -86,7 +86,7 @@
             // TxtResistenciaOhm
             // 
             TxtResistenciaOhm.BorderStyle = BorderStyle.FixedSingle;
-            TxtResistenciaOhm.Location = new Point(132, 184);
+            TxtResistenciaOhm.Location = new Point(152, 255);
             TxtResistenciaOhm.Name = "TxtResistenciaOhm";
             TxtResistenciaOhm.Size = new Size(100, 23);
             TxtResistenciaOhm.TabIndex = 61;
@@ -94,7 +94,7 @@
             // TxtCorrienteOhm
             // 
             TxtCorrienteOhm.BorderStyle = BorderStyle.FixedSingle;
-            TxtCorrienteOhm.Location = new Point(26, 184);
+            TxtCorrienteOhm.Location = new Point(15, 255);
             TxtCorrienteOhm.Name = "TxtCorrienteOhm";
             TxtCorrienteOhm.Size = new Size(100, 23);
             TxtCorrienteOhm.TabIndex = 60;
@@ -102,7 +102,7 @@
             // TxtVoltageOhm
             // 
             TxtVoltageOhm.BorderStyle = BorderStyle.FixedSingle;
-            TxtVoltageOhm.Location = new Point(175, 47);
+            TxtVoltageOhm.Location = new Point(183, 67);
             TxtVoltageOhm.Name = "TxtVoltageOhm";
             TxtVoltageOhm.Size = new Size(100, 23);
             TxtVoltageOhm.TabIndex = 59;
@@ -110,7 +110,8 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(38, 210);
+            label7.ForeColor = SystemColors.Control;
+            label7.Location = new Point(26, 281);
             label7.Name = "label7";
             label7.Size = new Size(78, 15);
             label7.TabIndex = 58;
@@ -119,7 +120,8 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(138, 210);
+            label6.ForeColor = SystemColors.Control;
+            label6.Location = new Point(170, 281);
             label6.Name = "label6";
             label6.Size = new Size(82, 15);
             label6.TabIndex = 57;
@@ -128,7 +130,8 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(196, 73);
+            label5.ForeColor = SystemColors.Control;
+            label5.Location = new Point(206, 93);
             label5.Name = "label5";
             label5.Size = new Size(60, 15);
             label5.TabIndex = 56;
@@ -138,12 +141,12 @@
             // 
             pictureBox1.BackColor = Color.White;
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
-            pictureBox1.BackgroundImageLayout = ImageLayout.None;
+            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox1.ImageLocation = "";
             pictureBox1.InitialImage = (Image)resources.GetObject("pictureBox1.InitialImage");
             pictureBox1.Location = new Point(-2, -2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(296, 244);
+            pictureBox1.Size = new Size(296, 298);
             pictureBox1.TabIndex = 62;
             pictureBox1.TabStop = false;
             // 
@@ -151,7 +154,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(304, 310);
+            BackColor = Color.FromArgb(54, 57, 62);
+            ClientSize = new Size(316, 354);
             Controls.Add(BtnLimpiarOhm);
             Controls.Add(BtnCalcularOhm);
             Controls.Add(TxtResistenciaOhm);
