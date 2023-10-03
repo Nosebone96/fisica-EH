@@ -29,8 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LeyesDeNewton));
-            tabControl1 = new TabControl();
-            tabPage1 = new TabPage();
+            BtnCalcularTrianguloDeLaFuerza = new RJButton.RJButton();
             CbFuerza = new ComboBox();
             label7 = new Label();
             label6 = new Label();
@@ -48,266 +47,241 @@
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
-            tabPage2 = new TabPage();
-            BtnCalcularTrianguloDeLaFuerza = new RJButton.RJButton();
-            tabControl1.SuspendLayout();
-            tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // tabControl1
+            // BtnCalcularTrianguloDeLaFuerza
             // 
-            tabControl1.Controls.Add(tabPage1);
-            tabControl1.Controls.Add(tabPage2);
-            tabControl1.Location = new Point(0, 0);
-            tabControl1.Name = "tabControl1";
-            tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(731, 393);
-            tabControl1.TabIndex = 0;
-            // 
-            // tabPage1
-            // 
-            tabPage1.Controls.Add(BtnCalcularTrianguloDeLaFuerza);
-            tabPage1.Controls.Add(CbFuerza);
-            tabPage1.Controls.Add(label7);
-            tabPage1.Controls.Add(label6);
-            tabPage1.Controls.Add(label5);
-            tabPage1.Controls.Add(TxtAceleración);
-            tabPage1.Controls.Add(txtMasa);
-            tabPage1.Controls.Add(pictureBox1);
-            tabPage1.Controls.Add(LblFR);
-            tabPage1.Controls.Add(BtnLimpiarFr);
-            tabPage1.Controls.Add(BtnFuerzaR);
-            tabPage1.Controls.Add(label4);
-            tabPage1.Controls.Add(TxtAg);
-            tabPage1.Controls.Add(TxtF2);
-            tabPage1.Controls.Add(TxtF1);
-            tabPage1.Controls.Add(label3);
-            tabPage1.Controls.Add(label2);
-            tabPage1.Controls.Add(label1);
-            tabPage1.Location = new Point(4, 24);
-            tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(723, 365);
-            tabPage1.TabIndex = 0;
-            tabPage1.Text = "Fuerza Resultante";
-            tabPage1.UseVisualStyleBackColor = true;
+            BtnCalcularTrianguloDeLaFuerza.BackgroundColor = Color.FromArgb(54, 57, 62);
+            BtnCalcularTrianguloDeLaFuerza.BorderColor = Color.White;
+            BtnCalcularTrianguloDeLaFuerza.BorderRadius = 1;
+            BtnCalcularTrianguloDeLaFuerza.BorderSize = 1;
+            BtnCalcularTrianguloDeLaFuerza.FlatAppearance.BorderSize = 0;
+            BtnCalcularTrianguloDeLaFuerza.FlatStyle = FlatStyle.Flat;
+            BtnCalcularTrianguloDeLaFuerza.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            BtnCalcularTrianguloDeLaFuerza.ForeColor = Color.White;
+            BtnCalcularTrianguloDeLaFuerza.Location = new Point(479, 342);
+            BtnCalcularTrianguloDeLaFuerza.Name = "BtnCalcularTrianguloDeLaFuerza";
+            BtnCalcularTrianguloDeLaFuerza.Size = new Size(123, 36);
+            BtnCalcularTrianguloDeLaFuerza.TabIndex = 62;
+            BtnCalcularTrianguloDeLaFuerza.Text = "📅 CALCULAR";
+            BtnCalcularTrianguloDeLaFuerza.TextColor = Color.White;
+            BtnCalcularTrianguloDeLaFuerza.UseVisualStyleBackColor = false;
             // 
             // CbFuerza
             // 
             CbFuerza.FormattingEnabled = true;
-            CbFuerza.Location = new Point(602, 85);
+            CbFuerza.Location = new Point(588, 109);
             CbFuerza.Name = "CbFuerza";
             CbFuerza.Size = new Size(105, 23);
-            CbFuerza.TabIndex = 43;
+            CbFuerza.TabIndex = 61;
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(557, 280);
+            label7.ForeColor = SystemColors.Control;
+            label7.Location = new Point(543, 304);
             label7.Name = "label7";
             label7.Size = new Size(105, 15);
-            label7.TabIndex = 42;
+            label7.TabIndex = 60;
             label7.Text = "Aceleración (m/s²)";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(457, 280);
+            label6.ForeColor = SystemColors.Control;
+            label6.Location = new Point(443, 304);
             label6.Name = "label6";
             label6.Size = new Size(59, 15);
-            label6.TabIndex = 41;
+            label6.TabIndex = 59;
             label6.Text = "Masa (kg)";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(623, 120);
+            label5.ForeColor = SystemColors.Control;
+            label5.Location = new Point(609, 144);
             label5.Name = "label5";
             label5.Size = new Size(61, 15);
-            label5.TabIndex = 40;
+            label5.TabIndex = 58;
             label5.Text = "Fuerza (N)";
             // 
             // TxtAceleración
             // 
             TxtAceleración.BorderStyle = BorderStyle.FixedSingle;
-            TxtAceleración.Location = new Point(562, 254);
+            TxtAceleración.Location = new Point(548, 278);
             TxtAceleración.Name = "TxtAceleración";
             TxtAceleración.Size = new Size(100, 23);
-            TxtAceleración.TabIndex = 39;
+            TxtAceleración.TabIndex = 57;
             // 
             // txtMasa
             // 
             txtMasa.BorderStyle = BorderStyle.FixedSingle;
-            txtMasa.Location = new Point(438, 254);
+            txtMasa.Location = new Point(424, 278);
             txtMasa.Name = "txtMasa";
             txtMasa.Size = new Size(100, 23);
-            txtMasa.TabIndex = 38;
+            txtMasa.TabIndex = 56;
             // 
             // pictureBox1
             // 
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox1.Location = new Point(397, 6);
+            pictureBox1.Location = new Point(383, 30);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(320, 292);
-            pictureBox1.TabIndex = 36;
+            pictureBox1.TabIndex = 55;
             pictureBox1.TabStop = false;
             // 
             // LblFR
             // 
             LblFR.AutoSize = true;
-            LblFR.Location = new Point(229, 184);
+            LblFR.ForeColor = SystemColors.Control;
+            LblFR.Location = new Point(215, 208);
             LblFR.Name = "LblFR";
             LblFR.Size = new Size(0, 15);
-            LblFR.TabIndex = 35;
+            LblFR.TabIndex = 54;
             // 
             // BtnLimpiarFr
             // 
-            BtnLimpiarFr.BackColor = Color.MediumSlateBlue;
-            BtnLimpiarFr.BackgroundColor = Color.MediumSlateBlue;
-            BtnLimpiarFr.BackgroundImage = (Image)resources.GetObject("BtnLimpiarFr.BackgroundImage");
+            BtnLimpiarFr.BackgroundColor = Color.FromArgb(54, 57, 62);
             BtnLimpiarFr.BackgroundImageLayout = ImageLayout.Stretch;
-            BtnLimpiarFr.BorderColor = Color.FromArgb(192, 0, 0);
+            BtnLimpiarFr.BorderColor = Color.White;
             BtnLimpiarFr.BorderRadius = 15;
-            BtnLimpiarFr.BorderSize = 2;
+            BtnLimpiarFr.BorderSize = 1;
             BtnLimpiarFr.FlatAppearance.BorderSize = 0;
             BtnLimpiarFr.FlatStyle = FlatStyle.Flat;
+            BtnLimpiarFr.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             BtnLimpiarFr.ForeColor = Color.White;
-            BtnLimpiarFr.Location = new Point(198, 282);
+            BtnLimpiarFr.Location = new Point(184, 306);
             BtnLimpiarFr.Name = "BtnLimpiarFr";
             BtnLimpiarFr.Size = new Size(142, 35);
-            BtnLimpiarFr.TabIndex = 34;
+            BtnLimpiarFr.TabIndex = 53;
+            BtnLimpiarFr.Text = "\U0001f9f9  LIMPIAR";
             BtnLimpiarFr.TextColor = Color.White;
             BtnLimpiarFr.UseVisualStyleBackColor = false;
-            BtnLimpiarFr.Click += BtnLimpiarFr_Click_1;
             // 
             // BtnFuerzaR
             // 
-            BtnFuerzaR.BackColor = Color.FromArgb(224, 224, 224);
-            BtnFuerzaR.BackgroundColor = Color.FromArgb(224, 224, 224);
-            BtnFuerzaR.BorderColor = Color.FromArgb(0, 0, 192);
+            BtnFuerzaR.BackColor = Color.FromArgb(54, 57, 62);
+            BtnFuerzaR.BackgroundColor = Color.FromArgb(54, 57, 62);
+            BtnFuerzaR.BorderColor = Color.White;
             BtnFuerzaR.BorderRadius = 1;
-            BtnFuerzaR.BorderSize = 2;
+            BtnFuerzaR.BorderSize = 1;
             BtnFuerzaR.FlatAppearance.BorderSize = 0;
             BtnFuerzaR.FlatStyle = FlatStyle.Flat;
             BtnFuerzaR.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            BtnFuerzaR.ForeColor = Color.Navy;
-            BtnFuerzaR.Location = new Point(52, 280);
+            BtnFuerzaR.ForeColor = Color.White;
+            BtnFuerzaR.Location = new Point(38, 304);
             BtnFuerzaR.Name = "BtnFuerzaR";
-            BtnFuerzaR.Size = new Size(111, 36);
-            BtnFuerzaR.TabIndex = 33;
-            BtnFuerzaR.Text = "Calcular";
-            BtnFuerzaR.TextColor = Color.Navy;
+            BtnFuerzaR.Size = new Size(125, 36);
+            BtnFuerzaR.TabIndex = 52;
+            BtnFuerzaR.Text = "📅 CALCULAR";
+            BtnFuerzaR.TextColor = Color.White;
             BtnFuerzaR.UseVisualStyleBackColor = false;
-            BtnFuerzaR.Click += BtnFuerzaR_Click_1;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(70, 184);
+            label4.ForeColor = SystemColors.Control;
+            label4.Location = new Point(56, 208);
             label4.Name = "label4";
             label4.Size = new Size(142, 15);
-            label4.TabIndex = 32;
+            label4.TabIndex = 51;
             label4.Text = "La fuerza resultante es de:";
             // 
             // TxtAg
             // 
-            TxtAg.Location = new Point(169, 139);
+            TxtAg.Location = new Point(155, 163);
             TxtAg.Name = "TxtAg";
             TxtAg.Size = new Size(112, 23);
-            TxtAg.TabIndex = 31;
+            TxtAg.TabIndex = 50;
             // 
             // TxtF2
             // 
-            TxtF2.Location = new Point(170, 101);
+            TxtF2.Location = new Point(156, 125);
             TxtF2.Name = "TxtF2";
             TxtF2.Size = new Size(112, 23);
-            TxtF2.TabIndex = 30;
+            TxtF2.TabIndex = 49;
             // 
             // TxtF1
             // 
-            TxtF1.Location = new Point(170, 66);
+            TxtF1.Location = new Point(156, 90);
             TxtF1.Name = "TxtF1";
             TxtF1.Size = new Size(112, 23);
-            TxtF1.TabIndex = 29;
+            TxtF1.TabIndex = 48;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(70, 142);
+            label3.ForeColor = SystemColors.Control;
+            label3.Location = new Point(56, 166);
             label3.Name = "label3";
             label3.Size = new Size(93, 15);
-            label3.TabIndex = 28;
+            label3.TabIndex = 47;
             label3.Text = "Digite el ángulo ";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(70, 104);
+            label2.ForeColor = SystemColors.Control;
+            label2.Location = new Point(56, 128);
             label2.Name = "label2";
             label2.Size = new Size(94, 15);
-            label2.TabIndex = 27;
+            label2.TabIndex = 46;
             label2.Text = "Digite la fuerza 2";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(70, 69);
+            label1.ForeColor = SystemColors.Control;
+            label1.Location = new Point(56, 93);
             label1.Name = "label1";
             label1.Size = new Size(94, 15);
-            label1.TabIndex = 26;
+            label1.TabIndex = 45;
             label1.Text = "Digite la fuerza 1";
-            // 
-            // tabPage2
-            // 
-            tabPage2.Location = new Point(4, 24);
-            tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(723, 365);
-            tabPage2.TabIndex = 1;
-            tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // BtnCalcularTrianguloDeLaFuerza
-            // 
-            BtnCalcularTrianguloDeLaFuerza.BackColor = Color.FromArgb(224, 224, 224);
-            BtnCalcularTrianguloDeLaFuerza.BackgroundColor = Color.FromArgb(224, 224, 224);
-            BtnCalcularTrianguloDeLaFuerza.BorderColor = Color.FromArgb(0, 0, 192);
-            BtnCalcularTrianguloDeLaFuerza.BorderRadius = 1;
-            BtnCalcularTrianguloDeLaFuerza.BorderSize = 2;
-            BtnCalcularTrianguloDeLaFuerza.FlatAppearance.BorderSize = 0;
-            BtnCalcularTrianguloDeLaFuerza.FlatStyle = FlatStyle.Flat;
-            BtnCalcularTrianguloDeLaFuerza.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            BtnCalcularTrianguloDeLaFuerza.ForeColor = Color.Navy;
-            BtnCalcularTrianguloDeLaFuerza.Location = new Point(496, 314);
-            BtnCalcularTrianguloDeLaFuerza.Name = "BtnCalcularTrianguloDeLaFuerza";
-            BtnCalcularTrianguloDeLaFuerza.Size = new Size(111, 36);
-            BtnCalcularTrianguloDeLaFuerza.TabIndex = 44;
-            BtnCalcularTrianguloDeLaFuerza.Text = "Calcular";
-            BtnCalcularTrianguloDeLaFuerza.TextColor = Color.Navy;
-            BtnCalcularTrianguloDeLaFuerza.UseVisualStyleBackColor = false;
-            BtnCalcularTrianguloDeLaFuerza.Click += BtnCalcularTrianguloDeLaFuerza_Click;
             // 
             // LeyesDeNewton
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(54, 57, 62);
             ClientSize = new Size(740, 405);
-            Controls.Add(tabControl1);
+            Controls.Add(BtnCalcularTrianguloDeLaFuerza);
+            Controls.Add(CbFuerza);
+            Controls.Add(label7);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(TxtAceleración);
+            Controls.Add(txtMasa);
+            Controls.Add(pictureBox1);
+            Controls.Add(LblFR);
+            Controls.Add(BtnLimpiarFr);
+            Controls.Add(BtnFuerzaR);
+            Controls.Add(label4);
+            Controls.Add(TxtAg);
+            Controls.Add(TxtF2);
+            Controls.Add(TxtF1);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Name = "LeyesDeNewton";
             StartPosition = FormStartPosition.Manual;
             Text = "LeyesDeNewton";
-            tabControl1.ResumeLayout(false);
-            tabPage1.ResumeLayout(false);
-            tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private TabControl tabControl1;
-        private TabPage tabPage1;
+        private RJButton.RJButton BtnCalcularTrianguloDeLaFuerza;
+        private ComboBox CbFuerza;
+        private Label label7;
+        private Label label6;
+        private Label label5;
+        private TextBox TxtAceleración;
+        private TextBox txtMasa;
+        private PictureBox pictureBox1;
         private Label LblFR;
         private RJButton.RJButton BtnLimpiarFr;
         private RJButton.RJButton BtnFuerzaR;
@@ -318,14 +292,5 @@
         private Label label3;
         private Label label2;
         private Label label1;
-        private TabPage tabPage2;
-        private ComboBox CbFuerza;
-        private Label label7;
-        private Label label6;
-        private Label label5;
-        private TextBox TxtAceleración;
-        private TextBox txtMasa;
-        private PictureBox pictureBox1;
-        private RJButton.RJButton BtnCalcularTrianguloDeLaFuerza;
     }
 }

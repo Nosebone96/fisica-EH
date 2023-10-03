@@ -27,7 +27,7 @@ namespace física_EH
             double fr = Math.Sqrt(Math.Pow(f1, 2) + Math.Pow(f2, 2) + 2 * f1 * f2 * Math.Cos(Math.PI * angulo / 180));
 
             LblFR.Text = "" + fr + "N";
-            CbFuerza.Items.Add(fr); 
+            CbFuerza.Items.Add(fr);
         }
 
         private void BtnLimpiarFr_Click_1(object sender, EventArgs e)
