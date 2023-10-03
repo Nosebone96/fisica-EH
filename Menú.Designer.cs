@@ -341,7 +341,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(54, 57, 62);
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(596, 448);
+            ClientSize = new Size(968, 448);
             Controls.Add(BtnCalcularCilindro);
             Controls.Add(rjButton5);
             Controls.Add(rjButton4);
