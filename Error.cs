@@ -29,7 +29,8 @@ namespace física_EH
                 {
                     porerror *= -1;
                 }
-                lblporerror1.Text = "" + porerror + "%";
+                double porcentageAproximado = Math.Round(porerror, 5);
+                lblporerror1.Text = "" + porcentageAproximado + "%";
             }
             catch
             {
