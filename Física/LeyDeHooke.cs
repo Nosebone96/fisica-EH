@@ -67,5 +67,10 @@ final:;
             TxtDeformaciónResorte.Text = "";
             TxtConstanteDeRigidez.Text = "";
         }
+
+        private void TxtFuerza_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

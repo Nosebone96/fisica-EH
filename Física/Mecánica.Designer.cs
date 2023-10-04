@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             RJButton.RJButton BtnMVCl;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mecánica));
             RJButton.RJButton BtnMRUV;
             RJButton.RJButton BtnNewton;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mecánica));
             RJButton.RJButton BtnLeyDeHooke;
             label5 = new Label();
             panel1 = new Panel();
@@ -59,6 +59,8 @@
             // 
             BtnMVCl.BackColor = Color.MediumSlateBlue;
             BtnMVCl.BackgroundColor = Color.MediumSlateBlue;
+            BtnMVCl.BackgroundImage = (Image)resources.GetObject("BtnMVCl.BackgroundImage");
+            BtnMVCl.BackgroundImageLayout = ImageLayout.Zoom;
             BtnMVCl.BorderColor = Color.PaleVioletRed;
             BtnMVCl.BorderRadius = 50;
             BtnMVCl.BorderSize = 1;
@@ -77,6 +79,8 @@
             // 
             BtnMRUV.BackColor = Color.MediumSlateBlue;
             BtnMRUV.BackgroundColor = Color.MediumSlateBlue;
+            BtnMRUV.BackgroundImage = (Image)resources.GetObject("BtnMRUV.BackgroundImage");
+            BtnMRUV.BackgroundImageLayout = ImageLayout.Zoom;
             BtnMRUV.BorderColor = Color.PaleVioletRed;
             BtnMRUV.BorderRadius = 50;
             BtnMRUV.BorderSize = 1;
@@ -116,6 +120,7 @@
             // 
             BtnLeyDeHooke.BackColor = Color.MediumSlateBlue;
             BtnLeyDeHooke.BackgroundColor = Color.MediumSlateBlue;
+            BtnLeyDeHooke.BackgroundImage = (Image)resources.GetObject("BtnLeyDeHooke.BackgroundImage");
             BtnLeyDeHooke.BackgroundImageLayout = ImageLayout.Stretch;
             BtnLeyDeHooke.BorderColor = Color.FromArgb(0, 192, 0);
             BtnLeyDeHooke.BorderRadius = 44;
@@ -261,7 +266,7 @@
             panel2.Controls.Add(BtnNewton);
             panel2.Location = new Point(374, 72);
             panel2.Name = "panel2";
-            panel2.Size = new Size(332, 450);
+            panel2.Size = new Size(288, 450);
             panel2.TabIndex = 31;
             // 
             // label10
@@ -317,7 +322,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(54, 57, 62);
-            ClientSize = new Size(721, 541);
+            ClientSize = new Size(681, 541);
             Controls.Add(label11);
             Controls.Add(panel1);
             Controls.Add(panel2);

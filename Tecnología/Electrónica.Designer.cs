@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             RJButton.RJButton BtnLeyDeOhm;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Electrónica));
             BtnResistencia = new RJButton.RJButton();
             label1 = new Label();
             label2 = new Label();
@@ -40,6 +41,8 @@
             // 
             BtnLeyDeOhm.BackColor = Color.MediumSlateBlue;
             BtnLeyDeOhm.BackgroundColor = Color.MediumSlateBlue;
+            BtnLeyDeOhm.BackgroundImage = (Image)resources.GetObject("BtnLeyDeOhm.BackgroundImage");
+            BtnLeyDeOhm.BackgroundImageLayout = ImageLayout.Zoom;
             BtnLeyDeOhm.BorderColor = SystemColors.Control;
             BtnLeyDeOhm.BorderRadius = 76;
             BtnLeyDeOhm.BorderSize = 1;
@@ -58,7 +61,8 @@
             // 
             BtnResistencia.BackColor = Color.Teal;
             BtnResistencia.BackgroundColor = Color.Teal;
-            BtnResistencia.BackgroundImageLayout = ImageLayout.Stretch;
+            BtnResistencia.BackgroundImage = (Image)resources.GetObject("BtnResistencia.BackgroundImage");
+            BtnResistencia.BackgroundImageLayout = ImageLayout.Zoom;
             BtnResistencia.BorderColor = SystemColors.Control;
             BtnResistencia.BorderRadius = 76;
             BtnResistencia.BorderSize = 1;

@@ -52,6 +52,7 @@
             // 
             // BtnCalcularTrianguloDeLaFuerza
             // 
+            BtnCalcularTrianguloDeLaFuerza.BackColor = Color.FromArgb(54, 57, 62);
             BtnCalcularTrianguloDeLaFuerza.BackgroundColor = Color.FromArgb(54, 57, 62);
             BtnCalcularTrianguloDeLaFuerza.BorderColor = Color.White;
             BtnCalcularTrianguloDeLaFuerza.BorderRadius = 1;
@@ -60,7 +61,7 @@
             BtnCalcularTrianguloDeLaFuerza.FlatStyle = FlatStyle.Flat;
             BtnCalcularTrianguloDeLaFuerza.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             BtnCalcularTrianguloDeLaFuerza.ForeColor = Color.White;
-            BtnCalcularTrianguloDeLaFuerza.Location = new Point(479, 342);
+            BtnCalcularTrianguloDeLaFuerza.Location = new Point(469, 379);
             BtnCalcularTrianguloDeLaFuerza.Name = "BtnCalcularTrianguloDeLaFuerza";
             BtnCalcularTrianguloDeLaFuerza.Size = new Size(123, 36);
             BtnCalcularTrianguloDeLaFuerza.TabIndex = 62;
@@ -80,7 +81,7 @@
             // 
             label7.AutoSize = true;
             label7.ForeColor = SystemColors.Control;
-            label7.Location = new Point(543, 304);
+            label7.Location = new Point(548, 339);
             label7.Name = "label7";
             label7.Size = new Size(105, 15);
             label7.TabIndex = 60;
@@ -90,7 +91,7 @@
             // 
             label6.AutoSize = true;
             label6.ForeColor = SystemColors.Control;
-            label6.Location = new Point(443, 304);
+            label6.Location = new Point(430, 340);
             label6.Name = "label6";
             label6.Size = new Size(59, 15);
             label6.TabIndex = 59;
@@ -109,7 +110,7 @@
             // TxtAceleración
             // 
             TxtAceleración.BorderStyle = BorderStyle.FixedSingle;
-            TxtAceleración.Location = new Point(548, 278);
+            TxtAceleración.Location = new Point(553, 313);
             TxtAceleración.Name = "TxtAceleración";
             TxtAceleración.Size = new Size(100, 23);
             TxtAceleración.TabIndex = 57;
@@ -117,7 +118,7 @@
             // txtMasa
             // 
             txtMasa.BorderStyle = BorderStyle.FixedSingle;
-            txtMasa.Location = new Point(424, 278);
+            txtMasa.Location = new Point(410, 314);
             txtMasa.Name = "txtMasa";
             txtMasa.Size = new Size(100, 23);
             txtMasa.TabIndex = 56;
@@ -126,9 +127,9 @@
             // 
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox1.Location = new Point(383, 30);
+            pictureBox1.Location = new Point(332, 30);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(320, 292);
+            pictureBox1.Size = new Size(371, 292);
             pictureBox1.TabIndex = 55;
             pictureBox1.TabStop = false;
             // 
@@ -143,6 +144,7 @@
             // 
             // BtnLimpiarFr
             // 
+            BtnLimpiarFr.BackColor = Color.FromArgb(54, 57, 62);
             BtnLimpiarFr.BackgroundColor = Color.FromArgb(54, 57, 62);
             BtnLimpiarFr.BackgroundImageLayout = ImageLayout.Stretch;
             BtnLimpiarFr.BorderColor = Color.White;
@@ -245,7 +247,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(54, 57, 62);
-            ClientSize = new Size(740, 405);
+            ClientSize = new Size(740, 427);
             Controls.Add(BtnCalcularTrianguloDeLaFuerza);
             Controls.Add(CbFuerza);
             Controls.Add(label7);
