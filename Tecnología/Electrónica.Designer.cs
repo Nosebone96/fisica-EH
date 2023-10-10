@@ -46,6 +46,7 @@
             BtnLeyDeOhm.BorderColor = SystemColors.Control;
             BtnLeyDeOhm.BorderRadius = 76;
             BtnLeyDeOhm.BorderSize = 1;
+            BtnLeyDeOhm.Cursor = Cursors.Hand;
             BtnLeyDeOhm.FlatAppearance.BorderSize = 0;
             BtnLeyDeOhm.FlatStyle = FlatStyle.Flat;
             BtnLeyDeOhm.ForeColor = Color.White;

@@ -36,16 +36,19 @@
             label6 = new Label();
             TxtánguloA = new TextBox();
             TxtánguloB = new TextBox();
-            textBox3 = new TextBox();
+            TxtLadoa = new TextBox();
             TxtángulC = new TextBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
-            BtnCalcularTri = new RJButton.RJButton();
+            TxtLadoc = new TextBox();
+            TxtLadob = new TextBox();
+            BtnCalcular = new RJButton.RJButton();
+            BtnLimpiar = new RJButton.RJButton();
+            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
+            label1.ForeColor = SystemColors.Control;
             label1.Location = new Point(36, 38);
             label1.Name = "label1";
             label1.Size = new Size(101, 15);
@@ -55,6 +58,7 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.ForeColor = SystemColors.Control;
             label2.Location = new Point(37, 98);
             label2.Name = "label2";
             label2.Size = new Size(100, 15);
@@ -64,6 +68,7 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.ForeColor = SystemColors.Control;
             label3.Location = new Point(36, 154);
             label3.Name = "label3";
             label3.Size = new Size(101, 15);
@@ -73,7 +78,8 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(37, 316);
+            label4.ForeColor = SystemColors.Control;
+            label4.Location = new Point(365, 142);
             label4.Name = "label4";
             label4.Size = new Size(87, 15);
             label4.TabIndex = 3;
@@ -82,7 +88,8 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(36, 266);
+            label5.ForeColor = SystemColors.Control;
+            label5.Location = new Point(364, 92);
             label5.Name = "label5";
             label5.Size = new Size(86, 15);
             label5.TabIndex = 4;
@@ -91,7 +98,8 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(35, 212);
+            label6.ForeColor = SystemColors.Control;
+            label6.Location = new Point(363, 38);
             label6.Name = "label6";
             label6.Size = new Size(87, 15);
             label6.TabIndex = 5;
@@ -111,12 +119,12 @@
             TxtánguloB.Size = new Size(102, 23);
             TxtánguloB.TabIndex = 7;
             // 
-            // textBox3
+            // TxtLadoa
             // 
-            textBox3.Location = new Point(161, 212);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(102, 23);
-            textBox3.TabIndex = 8;
+            TxtLadoa.Location = new Point(489, 38);
+            TxtLadoa.Name = "TxtLadoa";
+            TxtLadoa.Size = new Size(102, 23);
+            TxtLadoa.TabIndex = 8;
             // 
             // TxtángulC
             // 
@@ -125,50 +133,75 @@
             TxtángulC.Size = new Size(102, 23);
             TxtángulC.TabIndex = 9;
             // 
-            // textBox5
+            // TxtLadoc
             // 
-            textBox5.Location = new Point(161, 313);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(102, 23);
-            textBox5.TabIndex = 10;
+            TxtLadoc.Location = new Point(489, 139);
+            TxtLadoc.Name = "TxtLadoc";
+            TxtLadoc.Size = new Size(102, 23);
+            TxtLadoc.TabIndex = 10;
             // 
-            // textBox6
+            // TxtLadob
             // 
-            textBox6.Location = new Point(161, 258);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(102, 23);
-            textBox6.TabIndex = 11;
+            TxtLadob.Location = new Point(489, 84);
+            TxtLadob.Name = "TxtLadob";
+            TxtLadob.Size = new Size(102, 23);
+            TxtLadob.TabIndex = 11;
             // 
-            // BtnCalcularTri
+            // BtnCalcular
             // 
-            BtnCalcularTri.BackColor = Color.FromArgb(54, 57, 62);
-            BtnCalcularTri.BackgroundColor = Color.FromArgb(54, 57, 62);
-            BtnCalcularTri.BorderColor = Color.White;
-            BtnCalcularTri.BorderRadius = 1;
-            BtnCalcularTri.BorderSize = 1;
-            BtnCalcularTri.Cursor = Cursors.Hand;
-            BtnCalcularTri.FlatAppearance.BorderSize = 0;
-            BtnCalcularTri.FlatStyle = FlatStyle.Flat;
-            BtnCalcularTri.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            BtnCalcularTri.ForeColor = Color.White;
-            BtnCalcularTri.Location = new Point(36, 367);
-            BtnCalcularTri.Name = "BtnCalcularTri";
-            BtnCalcularTri.Size = new Size(121, 36);
-            BtnCalcularTri.TabIndex = 24;
-            BtnCalcularTri.Text = "📅 CALCULAR";
-            BtnCalcularTri.TextColor = Color.White;
-            BtnCalcularTri.UseVisualStyleBackColor = false;
+            BtnCalcular.BackColor = Color.FromArgb(54, 57, 62);
+            BtnCalcular.BackgroundColor = Color.FromArgb(54, 57, 62);
+            BtnCalcular.BorderColor = Color.White;
+            BtnCalcular.BorderRadius = 1;
+            BtnCalcular.BorderSize = 1;
+            BtnCalcular.Cursor = Cursors.Hand;
+            BtnCalcular.FlatAppearance.BorderSize = 0;
+            BtnCalcular.FlatStyle = FlatStyle.Flat;
+            BtnCalcular.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            BtnCalcular.ForeColor = Color.White;
+            BtnCalcular.Location = new Point(37, 237);
+            BtnCalcular.Name = "BtnCalcular";
+            BtnCalcular.Size = new Size(121, 36);
+            BtnCalcular.TabIndex = 24;
+            BtnCalcular.Text = "📅 CALCULAR";
+            BtnCalcular.TextColor = Color.White;
+            BtnCalcular.UseVisualStyleBackColor = false;
+            BtnCalcular.Click += BtnCalcular_Click;
+            // 
+            // BtnLimpiar
+            // 
+            BtnLimpiar.BackColor = Color.FromArgb(54, 57, 62);
+            BtnLimpiar.BackgroundColor = Color.FromArgb(54, 57, 62);
+            BtnLimpiar.BackgroundImageLayout = ImageLayout.Stretch;
+            BtnLimpiar.BorderColor = Color.White;
+            BtnLimpiar.BorderRadius = 15;
+            BtnLimpiar.BorderSize = 1;
+            BtnLimpiar.FlatAppearance.BorderSize = 0;
+            BtnLimpiar.FlatStyle = FlatStyle.Flat;
+            BtnLimpiar.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            BtnLimpiar.ForeColor = Color.White;
+            BtnLimpiar.Location = new Point(195, 238);
+            BtnLimpiar.Name = "BtnLimpiar";
+            BtnLimpiar.Size = new Size(142, 35);
+            BtnLimpiar.TabIndex = 51;
+            BtnLimpiar.Text = "\U0001f9f9  LIMPIAR";
+            BtnLimpiar.TextColor = Color.White;
+            BtnLimpiar.UseMnemonic = false;
+            BtnLimpiar.UseVisualStyleBackColor = true;
+            BtnLimpiar.Click += BtnLimpiar_Click;
             // 
             // Matemáticas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(54, 57, 62);
             ClientSize = new Size(800, 450);
-            Controls.Add(BtnCalcularTri);
-            Controls.Add(textBox6);
-            Controls.Add(textBox5);
+            Controls.Add(BtnLimpiar);
+            Controls.Add(BtnCalcular);
+            Controls.Add(TxtLadob);
+            Controls.Add(TxtLadoc);
             Controls.Add(TxtángulC);
-            Controls.Add(textBox3);
+            Controls.Add(TxtLadoa);
             Controls.Add(TxtánguloB);
             Controls.Add(TxtánguloA);
             Controls.Add(label6);
@@ -177,6 +210,7 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            ForeColor = SystemColors.Control;
             Name = "Matemáticas";
             Text = "Matemáticas";
             ResumeLayout(false);
@@ -193,10 +227,12 @@
         private Label label6;
         private TextBox TxtánguloA;
         private TextBox TxtánguloB;
-        private TextBox textBox3;
+        private TextBox TxtLadoa;
         private TextBox TxtángulC;
-        private TextBox textBox5;
-        private TextBox textBox6;
-        private RJButton.RJButton BtnCalcularTri;
+        private TextBox TxtLadoc;
+        private TextBox TxtLadob;
+        private RJButton.RJButton BtnCalcular;
+        private RJButton.RJButton BtnLimpiar;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

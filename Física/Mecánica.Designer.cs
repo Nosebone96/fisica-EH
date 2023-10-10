@@ -64,6 +64,7 @@
             BtnMVCl.BorderColor = Color.PaleVioletRed;
             BtnMVCl.BorderRadius = 50;
             BtnMVCl.BorderSize = 1;
+            BtnMVCl.Cursor = Cursors.Hand;
             BtnMVCl.FlatAppearance.BorderSize = 0;
             BtnMVCl.FlatStyle = FlatStyle.Flat;
             BtnMVCl.ForeColor = Color.White;
@@ -84,6 +85,7 @@
             BtnMRUV.BorderColor = Color.PaleVioletRed;
             BtnMRUV.BorderRadius = 50;
             BtnMRUV.BorderSize = 1;
+            BtnMRUV.Cursor = Cursors.Hand;
             BtnMRUV.FlatAppearance.BorderSize = 0;
             BtnMRUV.FlatStyle = FlatStyle.Flat;
             BtnMRUV.ForeColor = Color.White;

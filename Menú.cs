@@ -82,5 +82,11 @@ namespace física_EH
             Química quimica = new();
             quimica.ShowDialog();
         }
+
+        private void BtnMatematicas_Click(object sender, EventArgs e)
+        {
+            Matemáticas matemamaticas = new();
+            matemamaticas.ShowDialog();
+        }
     }
 }

@@ -44,7 +44,7 @@
             // TxtVelocidad
             // 
             TxtVelocidad.BorderStyle = BorderStyle.FixedSingle;
-            TxtVelocidad.Location = new Point(101, 308);
+            TxtVelocidad.Location = new Point(53, 320);
             TxtVelocidad.Name = "TxtVelocidad";
             TxtVelocidad.Size = new Size(100, 23);
             TxtVelocidad.TabIndex = 3;
@@ -52,7 +52,7 @@
             // txtTiempo
             // 
             txtTiempo.BorderStyle = BorderStyle.FixedSingle;
-            txtTiempo.Location = new Point(235, 308);
+            txtTiempo.Location = new Point(187, 320);
             txtTiempo.Name = "txtTiempo";
             txtTiempo.Size = new Size(100, 23);
             txtTiempo.TabIndex = 4;
@@ -60,7 +60,7 @@
             // TxtDistancia
             // 
             TxtDistancia.BorderStyle = BorderStyle.FixedSingle;
-            TxtDistancia.Location = new Point(287, 84);
+            TxtDistancia.Location = new Point(239, 96);
             TxtDistancia.Name = "TxtDistancia";
             TxtDistancia.Size = new Size(100, 23);
             TxtDistancia.TabIndex = 5;
@@ -77,7 +77,7 @@
             BtnLimpiarMRU.FlatAppearance.BorderSize = 0;
             BtnLimpiarMRU.FlatStyle = FlatStyle.Flat;
             BtnLimpiarMRU.ForeColor = Color.White;
-            BtnLimpiarMRU.Location = new Point(207, 374);
+            BtnLimpiarMRU.Location = new Point(159, 386);
             BtnLimpiarMRU.Name = "BtnLimpiarMRU";
             BtnLimpiarMRU.Size = new Size(142, 35);
             BtnLimpiarMRU.TabIndex = 24;
@@ -96,7 +96,7 @@
             BtnMRU.FlatStyle = FlatStyle.Flat;
             BtnMRU.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             BtnMRU.ForeColor = Color.Navy;
-            BtnMRU.Location = new Point(90, 374);
+            BtnMRU.Location = new Point(42, 386);
             BtnMRU.Name = "BtnMRU";
             BtnMRU.Size = new Size(111, 36);
             BtnMRU.TabIndex = 23;
@@ -110,18 +110,18 @@
             pictureBox1.BackColor = Color.FromArgb(54, 57, 62);
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox1.Location = new Point(63, 36);
+            pictureBox1.Location = new Point(12, 12);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(327, 266);
+            pictureBox1.Size = new Size(327, 302);
             pictureBox1.TabIndex = 28;
             pictureBox1.TabStop = false;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = Color.White;
             label1.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(290, 110);
+            label1.ForeColor = SystemColors.Control;
+            label1.Location = new Point(242, 122);
             label1.Name = "label1";
             label1.Size = new Size(97, 20);
             label1.TabIndex = 29;
@@ -132,7 +132,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = SystemColors.Control;
-            label2.Location = new Point(101, 334);
+            label2.Location = new Point(53, 346);
             label2.Name = "label2";
             label2.Size = new Size(114, 20);
             label2.TabIndex = 30;
@@ -143,7 +143,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = SystemColors.Control;
-            label3.Location = new Point(251, 334);
+            label3.Location = new Point(203, 346);
             label3.Name = "label3";
             label3.Size = new Size(80, 20);
             label3.TabIndex = 31;
@@ -154,7 +154,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(54, 57, 62);
-            ClientSize = new Size(450, 436);
+            ClientSize = new Size(362, 436);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
