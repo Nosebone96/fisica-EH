@@ -42,7 +42,6 @@
             TxtLadob = new TextBox();
             BtnCalcular = new RJButton.RJButton();
             BtnLimpiar = new RJButton.RJButton();
-            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             SuspendLayout();
             // 
             // label1
@@ -79,7 +78,7 @@
             // 
             label4.AutoSize = true;
             label4.ForeColor = SystemColors.Control;
-            label4.Location = new Point(365, 142);
+            label4.Location = new Point(311, 154);
             label4.Name = "label4";
             label4.Size = new Size(87, 15);
             label4.TabIndex = 3;
@@ -89,7 +88,7 @@
             // 
             label5.AutoSize = true;
             label5.ForeColor = SystemColors.Control;
-            label5.Location = new Point(364, 92);
+            label5.Location = new Point(311, 98);
             label5.Name = "label5";
             label5.Size = new Size(86, 15);
             label5.TabIndex = 4;
@@ -99,7 +98,7 @@
             // 
             label6.AutoSize = true;
             label6.ForeColor = SystemColors.Control;
-            label6.Location = new Point(363, 38);
+            label6.Location = new Point(311, 38);
             label6.Name = "label6";
             label6.Size = new Size(87, 15);
             label6.TabIndex = 5;
@@ -121,7 +120,7 @@
             // 
             // TxtLadoa
             // 
-            TxtLadoa.Location = new Point(489, 38);
+            TxtLadoa.Location = new Point(437, 38);
             TxtLadoa.Name = "TxtLadoa";
             TxtLadoa.Size = new Size(102, 23);
             TxtLadoa.TabIndex = 8;
@@ -135,14 +134,14 @@
             // 
             // TxtLadoc
             // 
-            TxtLadoc.Location = new Point(489, 139);
+            TxtLadoc.Location = new Point(435, 151);
             TxtLadoc.Name = "TxtLadoc";
             TxtLadoc.Size = new Size(102, 23);
             TxtLadoc.TabIndex = 10;
             // 
             // TxtLadob
             // 
-            TxtLadob.Location = new Point(489, 84);
+            TxtLadob.Location = new Point(436, 90);
             TxtLadob.Name = "TxtLadob";
             TxtLadob.Size = new Size(102, 23);
             TxtLadob.TabIndex = 11;
@@ -159,7 +158,7 @@
             BtnCalcular.FlatStyle = FlatStyle.Flat;
             BtnCalcular.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             BtnCalcular.ForeColor = Color.White;
-            BtnCalcular.Location = new Point(37, 237);
+            BtnCalcular.Location = new Point(36, 227);
             BtnCalcular.Name = "BtnCalcular";
             BtnCalcular.Size = new Size(121, 36);
             BtnCalcular.TabIndex = 24;
@@ -180,7 +179,7 @@
             BtnLimpiar.FlatStyle = FlatStyle.Flat;
             BtnLimpiar.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             BtnLimpiar.ForeColor = Color.White;
-            BtnLimpiar.Location = new Point(195, 238);
+            BtnLimpiar.Location = new Point(194, 228);
             BtnLimpiar.Name = "BtnLimpiar";
             BtnLimpiar.Size = new Size(142, 35);
             BtnLimpiar.TabIndex = 51;
@@ -195,7 +194,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(54, 57, 62);
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(590, 302);
             Controls.Add(BtnLimpiar);
             Controls.Add(BtnCalcular);
             Controls.Add(TxtLadob);
@@ -213,6 +212,7 @@
             ForeColor = SystemColors.Control;
             Name = "Matemáticas";
             Text = "Matemáticas";
+            Load += Matemáticas_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -233,6 +233,5 @@
         private TextBox TxtLadob;
         private RJButton.RJButton BtnCalcular;
         private RJButton.RJButton BtnLimpiar;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

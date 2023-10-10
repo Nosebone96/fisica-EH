@@ -261,5 +261,10 @@ namespace física_EH
             TxtánguloB.Text = "";
             TxtángulC.Text = "";
         }
+
+        private void Matemáticas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -46,6 +46,7 @@
             Btnpor = new RJButton.RJButton();
             rjButton5 = new RJButton.RJButton();
             rjButton4 = new RJButton.RJButton();
+            label1 = new Label();
             BtnPorError = new RJButton.RJButton();
             BtnElectrónica = new RJButton.RJButton();
             BtnFiguras = new RJButton.RJButton();
@@ -156,6 +157,27 @@
             BtnCalcularCilindro.Text = "Calcular";
             BtnCalcularCilindro.TextColor = Color.Navy;
             BtnCalcularCilindro.UseVisualStyleBackColor = false;
+            // 
+            // BtnMatematicas
+            // 
+            BtnMatematicas.BackColor = Color.White;
+            BtnMatematicas.BackgroundColor = Color.White;
+            BtnMatematicas.BackgroundImage = (Image)resources.GetObject("BtnMatematicas.BackgroundImage");
+            BtnMatematicas.BackgroundImageLayout = ImageLayout.Zoom;
+            BtnMatematicas.BorderColor = Color.Red;
+            BtnMatematicas.BorderRadius = 75;
+            BtnMatematicas.BorderSize = 1;
+            BtnMatematicas.Cursor = Cursors.Hand;
+            BtnMatematicas.FlatAppearance.BorderSize = 0;
+            BtnMatematicas.FlatStyle = FlatStyle.Flat;
+            BtnMatematicas.ForeColor = Color.White;
+            BtnMatematicas.Location = new Point(625, 111);
+            BtnMatematicas.Name = "BtnMatematicas";
+            BtnMatematicas.Size = new Size(155, 151);
+            BtnMatematicas.TabIndex = 51;
+            BtnMatematicas.TextColor = Color.White;
+            BtnMatematicas.UseVisualStyleBackColor = false;
+            BtnMatematicas.Click += BtnMatematicas_Click;
             // 
             // label2
             // 
@@ -310,7 +332,7 @@
             rjButton5.FlatStyle = FlatStyle.Flat;
             rjButton5.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             rjButton5.ForeColor = Color.White;
-            rjButton5.Location = new Point(752, 216);
+            rjButton5.Location = new Point(740, 380);
             rjButton5.Name = "rjButton5";
             rjButton5.Size = new Size(142, 35);
             rjButton5.TabIndex = 50;
@@ -330,7 +352,7 @@
             rjButton4.FlatStyle = FlatStyle.Flat;
             rjButton4.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             rjButton4.ForeColor = Color.White;
-            rjButton4.Location = new Point(593, 215);
+            rjButton4.Location = new Point(581, 379);
             rjButton4.Name = "rjButton4";
             rjButton4.Size = new Size(121, 36);
             rjButton4.TabIndex = 49;
@@ -338,26 +360,16 @@
             rjButton4.TextColor = Color.White;
             rjButton4.UseVisualStyleBackColor = false;
             // 
-            // BtnMatematicas
+            // label1
             // 
-            BtnMatematicas.BackColor = Color.White;
-            BtnMatematicas.BackgroundColor = Color.White;
-            BtnMatematicas.BackgroundImage = (Image)resources.GetObject("BtnMatematicas.BackgroundImage");
-            BtnMatematicas.BackgroundImageLayout = ImageLayout.Zoom;
-            BtnMatematicas.BorderColor = Color.Red;
-            BtnMatematicas.BorderRadius = 75;
-            BtnMatematicas.BorderSize = 1;
-            BtnMatematicas.Cursor = Cursors.Hand;
-            BtnMatematicas.FlatAppearance.BorderSize = 0;
-            BtnMatematicas.FlatStyle = FlatStyle.Flat;
-            BtnMatematicas.ForeColor = Color.White;
-            BtnMatematicas.Location = new Point(593, 25);
-            BtnMatematicas.Name = "BtnMatematicas";
-            BtnMatematicas.Size = new Size(155, 151);
-            BtnMatematicas.TabIndex = 51;
-            BtnMatematicas.TextColor = Color.White;
-            BtnMatematicas.UseVisualStyleBackColor = false;
-            BtnMatematicas.Click += BtnMatematicas_Click;
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 17F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(634, 271);
+            label1.Name = "label1";
+            label1.Size = new Size(146, 31);
+            label1.TabIndex = 52;
+            label1.Text = "Matemáticas";
             // 
             // Menú
             // 
@@ -366,6 +378,7 @@
             BackColor = Color.FromArgb(54, 57, 62);
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(918, 437);
+            Controls.Add(label1);
             Controls.Add(BtnMatematicas);
             Controls.Add(rjButton5);
             Controls.Add(rjButton4);
@@ -404,5 +417,6 @@
         private RJButton.RJButton Btnpor;
         private RJButton.RJButton rjButton5;
         private RJButton.RJButton rjButton4;
+        private Label label1;
     }
 }
