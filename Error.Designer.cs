@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Error));
             label1 = new Label();
             label2 = new Label();
             txtvalA = new TextBox();
@@ -42,7 +41,8 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(45, 90);
+            label1.ForeColor = SystemColors.ControlLight;
+            label1.Location = new Point(37, 22);
             label1.Name = "label1";
             label1.Size = new Size(142, 15);
             label1.TabIndex = 0;
@@ -51,7 +51,8 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(24, 141);
+            label2.ForeColor = SystemColors.ControlLight;
+            label2.Location = new Point(16, 73);
             label2.Name = "label2";
             label2.Size = new Size(166, 15);
             label2.TabIndex = 1;
@@ -59,14 +60,16 @@
             // 
             // txtvalA
             // 
-            txtvalA.Location = new Point(193, 87);
+            txtvalA.BorderStyle = BorderStyle.FixedSingle;
+            txtvalA.Location = new Point(185, 19);
             txtvalA.Name = "txtvalA";
             txtvalA.Size = new Size(100, 23);
             txtvalA.TabIndex = 2;
             // 
             // txtvalEx
             // 
-            txtvalEx.Location = new Point(196, 138);
+            txtvalEx.BorderStyle = BorderStyle.FixedSingle;
+            txtvalEx.Location = new Point(188, 70);
             txtvalEx.Name = "txtvalEx";
             txtvalEx.Size = new Size(100, 23);
             txtvalEx.TabIndex = 3;
@@ -74,7 +77,8 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(131, 215);
+            label3.ForeColor = SystemColors.ControlLight;
+            label3.Location = new Point(70, 103);
             label3.Name = "label3";
             label3.Size = new Size(59, 15);
             label3.TabIndex = 5;
@@ -83,48 +87,50 @@
             // lblporerror1
             // 
             lblporerror1.AutoSize = true;
-            lblporerror1.Location = new Point(195, 215);
+            lblporerror1.ForeColor = SystemColors.ControlLight;
+            lblporerror1.Location = new Point(134, 103);
             lblporerror1.Name = "lblporerror1";
             lblporerror1.Size = new Size(0, 15);
             lblporerror1.TabIndex = 6;
             // 
             // BtnLimpiar
             // 
-            BtnLimpiar.BackColor = Color.MediumSlateBlue;
-            BtnLimpiar.BackgroundColor = Color.MediumSlateBlue;
-            BtnLimpiar.BackgroundImage = (Image)resources.GetObject("BtnLimpiar.BackgroundImage");
+            BtnLimpiar.BackColor = Color.FromArgb(54, 57, 62);
+            BtnLimpiar.BackgroundColor = Color.FromArgb(54, 57, 62);
             BtnLimpiar.BackgroundImageLayout = ImageLayout.Stretch;
-            BtnLimpiar.BorderColor = Color.FromArgb(192, 0, 0);
+            BtnLimpiar.BorderColor = Color.White;
             BtnLimpiar.BorderRadius = 15;
-            BtnLimpiar.BorderSize = 2;
+            BtnLimpiar.BorderSize = 1;
             BtnLimpiar.FlatAppearance.BorderSize = 0;
             BtnLimpiar.FlatStyle = FlatStyle.Flat;
+            BtnLimpiar.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             BtnLimpiar.ForeColor = Color.White;
-            BtnLimpiar.Location = new Point(345, 131);
+            BtnLimpiar.Location = new Point(171, 140);
             BtnLimpiar.Name = "BtnLimpiar";
             BtnLimpiar.Size = new Size(142, 35);
             BtnLimpiar.TabIndex = 23;
+            BtnLimpiar.Text = "\U0001f9f9  LIMPIAR";
             BtnLimpiar.TextColor = Color.White;
             BtnLimpiar.UseVisualStyleBackColor = false;
             BtnLimpiar.Click += BtnLimpiar_Click_1;
             // 
             // BtnCalcular
             // 
-            BtnCalcular.BackColor = Color.FromArgb(224, 224, 224);
-            BtnCalcular.BackgroundColor = Color.FromArgb(224, 224, 224);
-            BtnCalcular.BorderColor = Color.FromArgb(0, 0, 192);
+            BtnCalcular.BackColor = Color.FromArgb(54, 57, 62);
+            BtnCalcular.BackgroundColor = Color.FromArgb(54, 57, 62);
+            BtnCalcular.BorderColor = Color.White;
             BtnCalcular.BorderRadius = 1;
-            BtnCalcular.BorderSize = 2;
+            BtnCalcular.BorderSize = 1;
             BtnCalcular.FlatAppearance.BorderSize = 0;
             BtnCalcular.FlatStyle = FlatStyle.Flat;
             BtnCalcular.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            BtnCalcular.ForeColor = Color.Navy;
-            BtnCalcular.Location = new Point(361, 78);
+            BtnCalcular.ForeColor = SystemColors.ControlLight;
+            BtnCalcular.Location = new Point(37, 140);
             BtnCalcular.Name = "BtnCalcular";
-            BtnCalcular.Size = new Size(111, 36);
+            BtnCalcular.Size = new Size(126, 36);
             BtnCalcular.TabIndex = 20;
-            BtnCalcular.Text = "Calcular";
-            BtnCalcular.TextColor = Color.Navy;
+            BtnCalcular.Text = "📅 CALCULAR";
+            BtnCalcular.TextColor = SystemColors.ControlLight;
             BtnCalcular.UseVisualStyleBackColor = false;
             BtnCalcular.Click += BtnCalcular_Click;
             // 
@@ -132,7 +138,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = Color.FromArgb(54, 57, 62);
+            ClientSize = new Size(432, 214);
             Controls.Add(BtnLimpiar);
             Controls.Add(BtnCalcular);
             Controls.Add(lblporerror1);

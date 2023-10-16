@@ -1,3 +1,6 @@
+using System.Security.Cryptography.X509Certificates;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
 namespace física_EH
 {
     internal static class Program
@@ -12,6 +15,7 @@ namespace física_EH
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new Menú());
+
         }
     }
 }

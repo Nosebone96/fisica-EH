@@ -1,3 +1,7 @@
+using System.Drawing;
+using System.Windows.Forms;
+using static física_EH.Program;
+
 namespace física_EH
 {
     public partial class Menú : System.Windows.Forms.Form
@@ -5,12 +9,14 @@ namespace física_EH
         public Menú()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.Manual;
+            this.Location = new Point(0, 0);
         }
         //porcentaje de error
         private void BtnPorError_Click_1(object sender, EventArgs e)
         {
             Error ventanaporerror = new();
-            ventanaporerror.Show();
+            ventanaporerror.ShowDialog();
         }
         //Volumen de figuras
         private void BtnFiguras_Click_1(object sender, EventArgs e)
@@ -22,8 +28,8 @@ namespace física_EH
         private void BtnCronómetro_Click(object sender, EventArgs e)
         {
             /*nombre de la pestaña = */
-            Cronómetro cronos = new();
-            cronos.Show();
+            LeyDeHooke ley = new();
+            ley.ShowDialog();
         }
         private void BtnAcustica_Click(object sender, EventArgs e)
         {
@@ -42,12 +48,6 @@ namespace física_EH
             Óptica optica = new();
             optica.Show();
         }
-        //Tensión
-        private void BtnTensión_Click(object sender, EventArgs e)
-        {
-            Tensión tensión = new();
-            tensión.Show();
-        }
         //electrónica
         private void BtnElectrónica_Click(object sender, EventArgs e)
         {
@@ -64,6 +64,29 @@ namespace física_EH
         {
             Mecánica mecanica = new();
             mecanica.Show();
+        }
+
+        private void RjButton2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Matematicas_Click(object sender, EventArgs e)
+        {
+            Matemáticas matematicas = new();
+            matematicas.ShowDialog();
+        }
+
+        private void BtnQuimica_Click(object sender, EventArgs e)
+        {
+            Química quimica = new();
+            quimica.ShowDialog();
+        }
+
+        private void BtnMatematicas_Click(object sender, EventArgs e)
+        {
+            Matemáticas matemamaticas = new();
+            matemamaticas.ShowDialog();
         }
     }
 }

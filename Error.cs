@@ -15,6 +15,8 @@ namespace física_EH
         public Error()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.Manual;
+            this.Location = new Point(0, 0);
         }
         private void BtnCalcular_Click(object sender, EventArgs e)
         {
@@ -27,7 +29,8 @@ namespace física_EH
                 {
                     porerror *= -1;
                 }
-                lblporerror1.Text = "" + porerror + "%";
+                double porcentageAproximado = Math.Round(porerror, 5);
+                lblporerror1.Text = "" + porcentageAproximado + "%";
             }
             catch
             {
